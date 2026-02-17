@@ -1,84 +1,43 @@
-# WBCD 2026 – Competition Task Specifications
+# WBCD Task Benchmark
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-> **Open-source task definitions, 3D-printable fixtures, bills of materials, and scoring rubrics for the [2nd World Bimanual Competitive Dexterous Manipulation (WBCD) Competition](https://wbcdcompetition.github.io/).**
+> Open-source, reproducible benchmark tasks for real-world bimanual dexterous manipulation.
 
-This repository provides everything needed to replicate the official WBCD 2026 benchmark tasks. Whether you are a competing team preparing your setup, a researcher benchmarking your own system, or someone who wants to build on these tasks, you will find standardized specifications here.
+## Background
 
----
+The [World Bimanual Competitive Dexterous (WBCD) Manipulation Competition](https://wbcdcompetition.github.io/) advances the state of the art in robotic manipulation through standardized real-world tasks. While simulation benchmarks have driven significant progress, there remains a critical gap in **standardized, reproducible physical-world tasks** that the community can build upon and compare against.
 
-## Competition Tracks
+This repository provides complete, open-source task specifications — including task rules, bills of materials with procurement links, 3D-printable fixtures, and scoring criteria — so that anyone can replicate these benchmark tasks in their own lab.
 
-| Track | Name | Robot | Directory |
-|-------|------|-------|-----------|
-| 1 | Logistics Picking | Unitree G1 | [`track-1-logistics-picking/`](track-1-logistics-picking/) |
-| 2 | Logistics Packing | Galaxea R1 | [`track-2-logistics-packing/`](track-2-logistics-packing/) |
-| 3 | Lab Experiments | AgileX Bimanual | [`track-3-lab-experiments/`](track-3-lab-experiments/) |
-| 4 | Deformable Manipulation | ARX | [`track-4-deformable-manipulation/`](track-4-deformable-manipulation/) |
+## Tasks
 
-Each track directory follows a consistent structure — see [Directory Layout](#directory-layout) below.
+| Track | Task | Description |
+|-------|------|-------------|
+| 1 | [Logistics Picking](track-1-logistics-picking/) | Transfer items from multi-height shelves to a transport vehicle |
+| 2 | [Logistics Packing](track-2-logistics-packing/) | Pick items from a moving conveyor and pack them into containers |
+| 3 | [Lab Experiments](track-3-lab-experiments/) | Handle sample racks, interface with instruments, and manage reagent bottles |
+| 4 | [Deformable Manipulation](track-4-deformable-manipulation/) | Load, fold, and unload a T-shirt |
 
----
+Each task page contains the complete specification: rules, bill of materials, and scoring criteria.
 
-## Quick Start
+## Media
 
-### Reading a Task Spec
+Each task includes reference videos demonstrating the expected workflow:
 
-1. Navigate to the track directory (e.g., `track-3-lab-experiments/`).
-2. Read `README.md` for the full task definition, rules, and setup instructions.
-3. Check `bom/bom.md` for the bill of materials.
-4. Check `scoring/scoring.md` for the detailed scoring rubric.
-
-### Replicating a Task Setup
-
-1. **3D-print fixtures** — Import STL files from `stl/` into your slicer (PLA recommended unless noted otherwise).
-2. **Source consumables** — Follow the BOM in `bom/bom.md`; purchase links are provided where available.
-3. **Arrange the workspace** — Refer to diagrams and photos in `media/`.
-
----
-
-## Directory Layout
-
-```
-wbcd_tasks/
-├── README.md                          ← You are here
-├── CONTRIBUTING.md                    ← How to add/edit tasks
-├── LICENSE
-├── _template/                         ← Blank task template for contributors
-│   └── README.md
-├── track-1-logistics-picking/
-│   ├── README.md
-│   ├── bom/
-│   ├── stl/
-│   ├── cad/
-│   ├── media/
-│   └── scoring/
-├── track-2-logistics-packing/
-│   └── ...
-├── track-3-lab-experiments/
-│   └── ...
-└── track-4-deformable-manipulation/
-    └── ...
-```
-
----
+- **Human demonstrations** — task performed by a human operator
+- **Teleoperation demonstrations** — task performed via robot teleoperation *(coming soon)*
 
 ## Resources
 
-- 🌐 **Competition Website**: <https://wbcdcompetition.github.io/>
-- 📊 **UMI Data Gallery**: <https://wbcdcompetition.github.io/umi-gallery-dist/>
-- 🤖 **Simulation Environments**: <https://wbcdcompetition.github.io/simulation.html>
-- 📧 **Contact**: [wbcd.competition@gmail.com](mailto:wbcd.competition@gmail.com)
-
----
+- **Competition Website**: <https://wbcdcompetition.github.io/>
+- **UMI Data Gallery**: <https://wbcdcompetition.github.io/umi-gallery-dist/>
+- **Simulation Environments**: <https://wbcdcompetition.github.io/simulation.html>
+- **Contact**: [wbcd.competition@gmail.com](mailto:wbcd.competition@gmail.com)
 
 ## Contributing
 
-We welcome contributions! If you are a track owner or want to improve an existing task spec, please see [CONTRIBUTING.md](CONTRIBUTING.md).
-
----
+We welcome contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## Citation
 
@@ -86,15 +45,13 @@ If you use these task specifications in your research, please cite:
 
 ```bibtex
 @misc{wbcd2026tasks,
-  title   = {WBCD 2026 Competition Task Specifications},
+  title   = {WBCD Task Benchmark},
   author  = {WBCD Organizing Committee},
   year    = {2026},
-  url     = {https://github.com/YOUR_ORG/wbcd_tasks},
+  url     = {https://github.com/wbcdcompetition/wbcd_tasks},
   note    = {Open-source benchmark tasks for bimanual dexterous manipulation}
 }
 ```
-
----
 
 ## License
 

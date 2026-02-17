@@ -1,76 +1,50 @@
-# Track 4: Deformable Object Manipulation
-
-> **Robot:** ARX · **Sponsor:** ARX
+# Track 4: Deformable Manipulation
 
 ## Overview
 
-This track evaluates robotic manipulation of deformable objects in manufacturing and service scenarios. Using a T-shirt as the representative flexible object, teams must demonstrate sophisticated perception and control capabilities.
+This task evaluates manipulation of deformable objects. Using a T-shirt as the representative flexible object, the system must demonstrate perception and control capabilities for loading, folding, and unloading.
 
-## Robot Platform
-
-| Item | Details |
-|------|---------|
-| Robot | ARX system |
-| End Effectors | <!-- TODO --> |
-| Control Method | <!-- TODO --> |
-
-## Task Definition
+## Task Rules
 
 ### Step 1: Load T-shirt
 
 Pick up and position the T-shirt into the workspace for manipulation.
 
-**Success Criteria:** T-shirt is correctly positioned in the designated workspace area.
+- T-shirt correctly positioned in the designated area
 
 ### Step 2: Fold T-shirt
 
 Fold the T-shirt into a neat and consistent configuration.
 
-**Success Criteria:** T-shirt is folded into a predefined target shape with acceptable tolerance.
+- T-shirt folded into the predefined target shape with acceptable tolerance
 
 ### Step 3: Unload T-shirt
 
-Remove the T-shirt from the workspace after manipulation is complete.
+Remove the folded T-shirt from the workspace.
 
-**Success Criteria:** Folded T-shirt is placed in the designated output area without unfolding.
+- Folded T-shirt placed in the designated output area without unfolding
 
-## Core Skills Assessed
-
-- Perception and tracking of deformable objects
-- Compliant grasping and manipulation
-- Control of object deformation and alignment
-- Consistency and quality of the final folded result
-
-## Workspace Setup
-
-<!-- TODO: Add workspace layout diagram and photos to media/ -->
-
-## Consumables & Materials
-
-See [`bom/bom.md`](bom/bom.md) for the full bill of materials.
+## Bill of Materials
 
 <!-- TODO: Specify T-shirt type, size, material, workspace surface -->
 
-## 3D-Printed Parts
+For detailed procurement links, see [`bom/bom.md`](bom/bom.md).
 
-<!-- TODO: Add any fixture STLs to stl/ -->
+### 3D-Printed Parts
+
+STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
+
+<!-- TODO: List printed parts if any -->
 
 ## Scoring
 
-See [`scoring/scoring.md`](scoring/scoring.md) for the detailed rubric.
-
-### Summary
-
 <!-- TODO: Define quantitative scoring criteria for fold quality, speed, and consistency -->
 
-## Reference Media
+For the detailed rubric, see [`scoring/scoring.md`](scoring/scoring.md).
 
-<!-- TODO: Add reference videos and setup photos to media/ -->
+## Media
 
-## Awards
-
-| Place | Prize |
-|-------|-------|
-| 🥇 1st | Professional robot from ARX (~$50,000–$60,000 value) |
-| 🥈 2nd | $10,000 USD |
-| 🥉 3rd | $5,000 USD |
+| Type | File | Description |
+|------|------|-------------|
+| Human Demo | `media/human-demo.mp4` | *TODO* |
+| Teleop Demo | — | *Coming soon* |

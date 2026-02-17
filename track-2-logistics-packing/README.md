@@ -1,29 +1,19 @@
 # Track 2: Logistics Packing
 
-> **Robot:** Galaxea R1 · **Sponsor:** Galaxea
-
 ## Overview
 
-This track focuses purely on stationary packing. It simulates a clean packing scenario where the robot needs to efficiently transfer items from a moving conveyor system to designated packing containers.
+This task simulates stationary packing in a logistics environment. The system must pick items from moving bins on a conveyor belt and organize them into a target packing container, demonstrating efficient and precise pick-and-place capability.
 
-## Robot Platform
+## Task Rules
 
-| Item | Details |
-|------|---------|
-| Robot | Galaxea R1 (or similar) |
-| End Effectors | <!-- TODO --> |
-| Control Method | <!-- TODO --> |
+Pick items from 10 moving bins on a conveyor belt and organize them in a target packing bin.
 
-## Task Definition
+### Picking
 
-The robot picks items from 10 moving bins on a conveyor belt and organizes them in a target packing bin.
-
-### Picking Environment
-
-- 10 picking bins move along conveyor at controlled speed
+- 10 bins move along the conveyor at a controlled speed
 - Each bin contains identical items
 - Items vary between bins (shape, size, weight)
-- Time limit per bin at picking point
+- Time limit per bin at the picking point
 
 ### Packing Options
 
@@ -32,39 +22,30 @@ The robot picks items from 10 moving bins on a conveyor belt and organizes them 
 | **Standard** | Rigid plastic container as packing bin |
 | **Advanced** | Cardboard box with additional box closure requirement |
 
-## Workspace Setup
+## Bill of Materials
 
-<!-- TODO: Add conveyor layout, bin dimensions, and workspace photos to media/ -->
+<!-- TODO: Add consumables and materials list -->
 
-## Consumables & Materials
+For detailed procurement links, see [`bom/bom.md`](bom/bom.md).
 
-See [`bom/bom.md`](bom/bom.md) for the full bill of materials.
+### 3D-Printed Parts
 
-<!-- TODO: Specify bin dimensions, conveyor specs, item types -->
+STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
 
-## 3D-Printed Parts
-
-<!-- TODO: Add any fixture STLs to stl/ -->
+<!-- TODO: List printed parts if any -->
 
 ## Scoring
-
-See [`scoring/scoring.md`](scoring/scoring.md) for the detailed rubric.
-
-### Summary
 
 | Criterion | Description |
 |-----------|-------------|
 | **Time Efficiency** | Total picking time (cumulative for 10 items); total packing time (cumulative for 10 placements) |
-| **Quality Standards** | Items stacked tightly and neatly, not exceeding bin height; for advanced version, cardboard box must be properly sealed |
+| **Quality Standard** | Items stacked tightly and neatly, not exceeding bin height; for advanced option, cardboard box must be properly sealed |
 
-## Reference Media
+For the detailed rubric, see [`scoring/scoring.md`](scoring/scoring.md).
 
-<!-- TODO: Add sample test scene photos/videos to media/ -->
+## Media
 
-## Awards
-
-| Place | Prize |
-|-------|-------|
-| 🥇 1st | Professional robot from Galaxea (~$50,000–$60,000 value) |
-| 🥈 2nd | $10,000 USD |
-| 🥉 3rd | $5,000 USD |
+| Type | File | Description |
+|------|------|-------------|
+| Human Demo | `media/human-demo.mp4` | *TODO* |
+| Teleop Demo | — | *Coming soon* |

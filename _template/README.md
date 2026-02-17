@@ -1,50 +1,34 @@
 # Track N: Task Name
 
-<!-- Copy this template to create a new track directory. Replace all placeholders. -->
-
 ## Overview
 
-<!-- TODO: One-paragraph description of the task scenario and goals. -->
+<!-- One-paragraph description of the task scenario and goals. -->
 
-## Robot Platform
+## Task Rules
 
-<!-- TODO: Robot model, manufacturer, link to specs. -->
+<!-- Step-by-step description of what the system must do. -->
 
-| Item | Details |
-|------|---------|
-| Robot | <!-- TODO --> |
-| End Effectors | <!-- TODO --> |
-| Control Method | <!-- TODO --> |
+### Step 1: <!-- Step Name -->
 
-## Task Definition
+<!-- Description of this step. -->
 
-<!-- TODO: Step-by-step description of what the robot must do. Include diagrams from media/ if available. -->
+### Step 2: <!-- Step Name -->
 
-### Step 1: <!-- TODO: Step Name -->
+<!-- Description of this step. -->
 
-**Description:** <!-- TODO -->
+## Bill of Materials
 
-**Success Criteria:** <!-- TODO -->
+<!-- List all consumables, materials, and hardware needed to replicate the task. -->
 
-### Step 2: <!-- TODO: Step Name -->
+| # | Item | Qty | Specification | Notes |
+|---|------|-----|---------------|-------|
+| 1 | <!-- TODO --> | | | |
 
-**Description:** <!-- TODO -->
+For detailed procurement links, see [`bom/bom.md`](bom/bom.md).
 
-**Success Criteria:** <!-- TODO -->
+### 3D-Printed Parts
 
-## Workspace Setup
-
-<!-- TODO: Describe the physical workspace layout. Reference setup photos/diagrams in media/. -->
-
-![Workspace setup diagram](media/workspace-setup.jpg) <!-- TODO: add actual image -->
-
-## Consumables & Materials
-
-See the full Bill of Materials in [`bom/bom.md`](bom/bom.md).
-
-## 3D-Printed Parts
-
-All printable fixtures are in the [`stl/`](stl/) directory. Source CAD files are in [`cad/`](cad/).
+STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
 
 | Part | File | Material | Notes |
 |------|------|----------|-------|
@@ -52,19 +36,17 @@ All printable fixtures are in the [`stl/`](stl/) directory. Source CAD files are
 
 ## Scoring
 
-See the detailed scoring rubric in [`scoring/scoring.md`](scoring/scoring.md).
+<!-- Scoring criteria and rubric for evaluating task performance. -->
 
-### Summary
+| Criterion | Description |
+|-----------|-------------|
+| <!-- TODO --> | <!-- TODO --> |
 
-<!-- TODO: High-level scoring overview. -->
+For the detailed rubric, see [`scoring/scoring.md`](scoring/scoring.md).
 
-## Reference Media
+## Media
 
 | Type | File | Description |
 |------|------|-------------|
 | Human Demo | `media/human-demo.mp4` | <!-- TODO --> |
-| Setup Photo | `media/workspace-setup.jpg` | <!-- TODO --> |
-
-## FAQ
-
-<!-- TODO: Common questions and answers about this task. -->
+| Teleop Demo | — | *Coming soon* |

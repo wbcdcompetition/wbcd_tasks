@@ -4,14 +4,14 @@
 
 | # | Item | Qty | Specification | Supplier / Link | Est. Cost | Notes |
 |---|------|-----|---------------|-----------------|-----------|-------|
-| 1 | Test sample vials/tubes | <!-- TODO --> | <!-- TODO: e.g., 12×75 mm borosilicate --> | <!-- TODO --> | <!-- TODO --> | For Steps 1 & 2 |
-| 2 | High-density sample rack | 1 | <!-- TODO: e.g., 96-position, polypropylene --> | <!-- TODO --> | <!-- TODO --> | Target rack for Step 1 |
-| 3 | Array tray (source) | 1 | <!-- TODO --> | <!-- TODO --> | <!-- TODO --> | Source container for pick |
-| 4 | Instrument tray (target) | 1 | <!-- TODO --> | <!-- TODO --> | <!-- TODO --> | For Step 2 transfers |
-| 5 | Reagent Bottle A | 1 | <!-- TODO: e.g., 500 mL, GL45 thread --> | <!-- TODO --> | <!-- TODO --> | With threaded cap |
-| 6 | Reagent Bottle B | 1 | <!-- TODO: e.g., 500 mL, GL45 thread --> | <!-- TODO --> | <!-- TODO --> | With threaded cap |
-| 7 | Flexible tubing | <!-- TODO --> | <!-- TODO: e.g., silicone, ID 3 mm, length 500 mm --> | <!-- TODO --> | <!-- TODO --> | For Step 3 |
-| 8 | Solvent (simulated) | <!-- TODO --> | <!-- TODO: e.g., colored water --> | — | — | For visual feedback |
+| 1 | 2 mL sample vial | TBD by match setup | 2 mL sample vial | [Taobao](https://item.taobao.com/item.htm?id=17615677498) | ~CNY 0.4 / pc | Step 1 and Step 2 sample carrier |
+| 2 | 2 mL sample vial rack | 1 | Rack compatible with 2 mL sample vials | [Taobao](https://item.taobao.com/item.htm?id=710110090808) | ~CNY 120 / unit | Primary rack for Step 1 loading |
+| 3 | 8 mL glass vial | TBD by match setup | 8 mL glass vial | [Taobao](https://item.taobao.com/item.htm?id=19991893535) | ~CNY 1.5 / pc | Used in instrument interface scenarios |
+| 4 | 8 mL glass vial rack | 1 | Rack for 8 mL glass vials | Organizer/team-provided | In-house stock | Equivalent racks are acceptable if vial fit is consistent |
+| 5 | Solvent bottle A | 1 | 1 L bottle body (with matching cap) | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5701565429700) | ~CNY 20 / unit | Step 3 source bottle |
+| 6 | Solvent bottle B | 1 | 1 L bottle body (with matching cap) | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5701565429700) | ~CNY 20 / unit | Step 3 target bottle |
+| 7 | Flexible tubing + filter head | 1 set | Tubing assembly for bottle transfer | [Tmall](https://detail.tmall.com/item.htm?id=956086151290&skuId=6049729811075) | ~CNY 100 / set | Used in Step 3 tubing switch |
+| 8 | Spare bottle cap | 2 | Replacement cap for the 1 L bottle | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5762711841749) | ~CNY 8 / pc | Recommended spare for cap handling task |
 
 ## Fixtures & Hardware
 

@@ -18,21 +18,19 @@
 
 ## Bill of Materials
 
-<!-- List all consumables, materials, and hardware needed to replicate the task. -->
+<!-- List all consumables, materials, and hardware needed to replicate the task. Include photos from media/ where available. -->
 
-| # | Item | Qty | Specification | Notes |
-|---|------|-----|---------------|-------|
-| 1 | <!-- TODO --> | | | |
-
-For detailed procurement links, see [`bom/bom.md`](bom/bom.md).
+| | Item | Qty | Unit Price | Supplier |
+|:---:|------|:---:|---:|------|
+| <!-- photo --> | <!-- TODO --> | | | |
 
 ### 3D-Printed Parts
 
-STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
+Printable STL and source CAD files are in [`parts/`](parts/).
 
 | Part | File | Material | Notes |
 |------|------|----------|-------|
-| <!-- TODO --> | `stl/TODO.stl` | PLA | <!-- TODO --> |
+| <!-- TODO --> | `parts/TODO.stl` | PLA | <!-- TODO --> |
 
 ## Scoring
 
@@ -41,8 +39,6 @@ STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
 | Criterion | Description |
 |-----------|-------------|
 | <!-- TODO --> | <!-- TODO --> |
-
-For the detailed rubric, see [`scoring/scoring.md`](scoring/scoring.md).
 
 ## Media
 

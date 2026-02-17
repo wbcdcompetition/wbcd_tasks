@@ -28,11 +28,9 @@ Remove the folded T-shirt from the workspace.
 
 <!-- TODO: Specify T-shirt type, size, material, workspace surface -->
 
-For detailed procurement links, see [`bom/bom.md`](bom/bom.md).
-
 ### 3D-Printed Parts
 
-STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
+Printable STL and source CAD files are in [`parts/`](parts/).
 
 <!-- TODO: List printed parts if any -->
 
@@ -40,7 +38,6 @@ STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
 
 <!-- TODO: Define quantitative scoring criteria for fold quality, speed, and consistency -->
 
-For the detailed rubric, see [`scoring/scoring.md`](scoring/scoring.md).
 
 ## Media
 

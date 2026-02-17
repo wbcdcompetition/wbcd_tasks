@@ -16,13 +16,11 @@ There is no limit on the number of items transferred per operation, but items mu
 
 ## Bill of Materials
 
-<!-- TODO: Add consumables and materials list -->
-
-For detailed procurement links, see [`bom/bom.md`](bom/bom.md).
+<!-- TODO: Add consumables and materials list with photos from media/ -->
 
 ### 3D-Printed Parts
 
-STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
+Printable STL and source CAD files are in [`parts/`](parts/).
 
 <!-- TODO: List printed parts if any -->
 
@@ -33,7 +31,6 @@ STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
 | **Time Efficiency** | Number of items transferred within 10 minutes; minimum time per individual transfer |
 | **Quality Standard** | Success rate of picking from shelves; number of drops during transportation |
 
-For the detailed rubric, see [`scoring/scoring.md`](scoring/scoring.md).
 
 ## Media
 

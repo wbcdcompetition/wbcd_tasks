@@ -24,13 +24,11 @@ Pick items from 10 moving bins on a conveyor belt and organize them in a target 
 
 ## Bill of Materials
 
-<!-- TODO: Add consumables and materials list -->
-
-For detailed procurement links, see [`bom/bom.md`](bom/bom.md).
+<!-- TODO: Add consumables and materials list with photos from media/ -->
 
 ### 3D-Printed Parts
 
-STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
+Printable STL and source CAD files are in [`parts/`](parts/).
 
 <!-- TODO: List printed parts if any -->
 
@@ -41,7 +39,6 @@ STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
 | **Time Efficiency** | Total picking time (cumulative for 10 items); total packing time (cumulative for 10 placements) |
 | **Quality Standard** | Items stacked tightly and neatly, not exceeding bin height; for advanced option, cardboard box must be properly sealed |
 
-For the detailed rubric, see [`scoring/scoring.md`](scoring/scoring.md).
 
 ## Media
 

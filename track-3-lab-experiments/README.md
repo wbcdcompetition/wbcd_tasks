@@ -32,22 +32,19 @@ Loosen and tighten threaded caps on solvent bottles (A & B) and relocate flexibl
 
 ## Bill of Materials
 
-| # | Item | Qty | Specification | Notes |
-|---|------|-----|---------------|-------|
-| 1 | 2 mL sample vial | Per setup | 2 mL sample vial | Step 1 & 2 |
-| 2 | 2 mL sample vial rack | 1 | Rack for 2 mL vials | Step 1 target rack |
-| 3 | 8 mL glass vial | Per setup | 8 mL glass vial | Instrument interface |
-| 4 | 8 mL glass vial rack | 1 | Rack for 8 mL vials | Source/target tray |
-| 5 | Solvent bottle A | 1 | 1 L bottle with threaded cap | Step 3 |
-| 6 | Solvent bottle B | 1 | 1 L bottle with threaded cap | Step 3 |
-| 7 | Flexible tubing + filter head | 1 set | Tubing assembly | Step 3 tubing switch |
-| 8 | Spare bottle cap | 2 | Replacement cap for 1 L bottle | Recommended spare |
-
-For detailed procurement links and pricing, see [`bom/bom.md`](bom/bom.md).
+| | Item | Qty | Unit Price (CNY) | Supplier |
+|:---:|------|:---:|---:|------|
+| <img src="media/2ml_sample_vial.jpg" height="80"> | 2 mL Sample Vial | Per setup | 0.4 | [Taobao](https://item.taobao.com/item.htm?id=17615677498) |
+| <img src="media/2ml_sample_vial_rack.jpg" height="80"> | 2 mL Sample Vial Rack | 1 | 120 | [Taobao](https://item.taobao.com/item.htm?id=710110090808) |
+| <img src="media/8ml_glass_vial.jpg" height="80"> | 8 mL Glass Vial | Per setup | 1.5 | [Taobao](https://item.taobao.com/item.htm?id=19991893535) |
+| <img src="media/8ml_glass_vial_rack.jpg" height="80"> | 8 mL Glass Vial Rack | 1 | — | In-house stock |
+| <img src="media/1Lsolvent_bottle_tube_cap.png" height="80"> | 1 L Solvent Bottle | 2 | 20 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5701565429700) |
+| | Flexible Tubing + Filter Head | 1 set | 100 | [Tmall](https://detail.tmall.com/item.htm?id=956086151290&skuId=6049729811075) |
+| | Spare Bottle Cap | 2 | 8 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5762711841749) |
 
 ### 3D-Printed Parts
 
-STL files are in [`stl/`](stl/). Source CAD files are in [`cad/`](cad/).
+Printable STL and source CAD files are in [`parts/`](parts/).
 
 <!-- TODO: List printed fixtures -->
 
@@ -68,8 +65,6 @@ Teams are scored across three dimensions:
 | 1 — Sample Loading | Samples correctly seated; drops; time |
 | 2 — Instrument Interfacing | Correct transfers; placement accuracy; time |
 | 3 — Mobile Phase Management | Cap integrity; tubing repositioned; no spills; time |
-
-For the detailed rubric, see [`scoring/scoring.md`](scoring/scoring.md).
 
 ## Media
 

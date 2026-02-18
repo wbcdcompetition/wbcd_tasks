@@ -6,7 +6,7 @@
 
 ## Background
 
-The [World Bimanual Competitive Dexterous (WBCD) Manipulation Competition](https://wbcdcompetition.github.io/) advances the state of the art in robotic manipulation through standardized real-world tasks. While simulation benchmarks have driven significant progress, there remains a critical gap in **standardized, reproducible physical-world tasks** that the community can build upon and compare against.
+The [What Bimanuals Can Do (WBCD) Competition](https://wbcdcompetition.github.io/) advances the state of the art in robotic manipulation through standardized real-world tasks. While simulation benchmarks have driven significant progress, there remains a critical gap in **standardized, reproducible physical-world tasks** that the community can build upon and compare against.
 
 This repository provides complete, open-source task specifications — including task rules, bills of materials with procurement links, 3D-printable fixtures, and scoring criteria — so that anyone can replicate these benchmark tasks in their own lab.
 

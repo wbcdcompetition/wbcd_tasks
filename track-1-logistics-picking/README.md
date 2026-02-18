@@ -30,11 +30,3 @@ Printable STL and source CAD files are in [`parts/`](parts/).
 |-----------|-------------|
 | **Time Efficiency** | Number of items transferred within 10 minutes; minimum time per individual transfer |
 | **Quality Standard** | Success rate of picking from shelves; number of drops during transportation |
-
-
-## Media
-
-| Type | File | Description |
-|------|------|-------------|
-| Human Demo | `media/human-demo.mp4` | *TODO* |
-| Teleop Demo | — | *Coming soon* |

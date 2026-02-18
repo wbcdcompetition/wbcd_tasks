@@ -8,51 +8,73 @@ This task simulates a laboratory automation workflow. The system handles high-de
 
 Teams perform **Steps 1 → 2 → 3 in order** as one round. After completing a round, the workspace is reset and the next round begins. All three steps are **mandatory per round** — you cannot skip a step or reorder them. The goal is to complete as many rounds as possible within the time limit.
 
----
-
 ### Step 1: Sample Loading
 
-Place vials into partially filled racks (dense packing). The racks already contain vials in most positions — the operator must seat the remaining vials into the correct empty slots.
+<table>
+<tr><td width="280" valign="top">
+
+<img src="media/human_demo_step1.gif" width="280">
+
+</td><td valign="top">
+
+Place vials into partially filled racks (dense packing). The racks already contain vials in most positions — seat the remaining vials into the correct empty slots.
 
 | Action | Description |
 |--------|-------------|
-| 1a | Seat a 2 mL vial into the 2 mL sample vial rack |
-| 1b | Seat a 2 mL vial into the 2 mL sample vial rack |
-| 1c | Seat an 8 mL vial into the 8 mL glass vial rack |
-| 1d | Seat an 8 mL vial into the 8 mL glass vial rack |
+| 1a | Seat a 2 mL vial into the 2 mL rack |
+| 1b | Seat a 2 mL vial into the 2 mL rack |
+| 1c | Seat an 8 mL vial into the 8 mL rack |
+| 1d | Seat an 8 mL vial into the 8 mL rack |
 
-**Success Criteria:** All 4 vials fully inserted, upright, and in the correct positions. No vials damaged or dropped.
+**Success Criteria:** All 4 vials fully inserted, upright, correct positions. No damage or drops.
 
----
+</td></tr>
+</table>
 
 ### Step 2: Instrument Interfacing
+
+<table>
+<tr><td width="280" valign="top">
+
+<img src="media/human_demo_step2.gif" width="280">
+
+</td><td valign="top">
 
 Load a sample rack into an analytical instrument by operating its drawer mechanism.
 
 | Action | Description |
 |--------|-------------|
 | 2a | Open the instrument drawer |
-| 2b | Place the sample rack into the drawer in the correct position and orientation |
+| 2b | Place the rack in the correct position |
 | 2c | Close the instrument drawer |
 
-**Success Criteria:** Drawer opened and closed cleanly without excessive force. Rack placed in the correct position inside the instrument.
+**Success Criteria:** Drawer opened/closed without excessive force. Rack in correct position.
 
----
+</td></tr>
+</table>
 
 ### Step 3: Mobile Phase Management
+
+<table>
+<tr><td width="280" valign="top">
+
+<img src="media/human_demo_step3.gif" width="280">
+
+</td><td valign="top">
 
 Switch the solvent supply line from bottle A to bottle B by operating threaded caps and relocating the flexible tubing.
 
 | Action | Description |
 |--------|-------------|
-| 3a | Loosen and remove the cap from the source bottle |
+| 3a | Remove the cap from the source bottle |
 | 3b | Remove the tubing from the source bottle |
 | 3c | Insert the tubing into the target bottle |
-| 3d | Replace and tighten the cap on the source bottle |
+| 3d | Replace the cap on the source bottle |
 
-**Success Criteria:** Caps handled without stripping or damage. Tubing correctly relocated. All bottles remain upright with no spills.
+**Success Criteria:** Caps intact, tubing relocated, bottles upright, no spills.
 
----
+</td></tr>
+</table>
 
 ## Bill of Materials
 
@@ -137,10 +159,3 @@ Each step is worth **20 points per round** (60 points per complete round). The t
 > | 3 | 20 | 15 | 20 | 55 |
 > | 4 | 20 | 10 | — | 30 |
 > | | | | **Total** | **195** |
-
-## Media
-
-| Type | File | Description |
-|------|------|-------------|
-| Human Demo | `media/human-demo.mp4` | *TODO* |
-| Teleop Demo | — | *Coming soon* |

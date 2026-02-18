@@ -37,11 +37,3 @@ Printable STL and source CAD files are in [`parts/`](parts/).
 ## Scoring
 
 <!-- TODO: Define quantitative scoring criteria for fold quality, speed, and consistency -->
-
-
-## Media
-
-| Type | File | Description |
-|------|------|-------------|
-| Human Demo | `media/human-demo.mp4` | *TODO* |
-| Teleop Demo | — | *Coming soon* |

@@ -39,10 +39,3 @@ Printable STL and source CAD files are in [`parts/`](parts/).
 | Criterion | Description |
 |-----------|-------------|
 | <!-- TODO --> | <!-- TODO --> |
-
-## Media
-
-| Type | File | Description |
-|------|------|-------------|
-| Human Demo | `media/human-demo.mp4` | <!-- TODO --> |
-| Teleop Demo | — | *Coming soon* |

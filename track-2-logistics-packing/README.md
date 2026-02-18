@@ -38,11 +38,3 @@ Printable STL and source CAD files are in [`parts/`](parts/).
 |-----------|-------------|
 | **Time Efficiency** | Total picking time (cumulative for 10 items); total packing time (cumulative for 10 placements) |
 | **Quality Standard** | Items stacked tightly and neatly, not exceeding bin height; for advanced option, cardboard box must be properly sealed |
-
-
-## Media
-
-| Type | File | Description |
-|------|------|-------------|
-| Human Demo | `media/human-demo.mp4` | *TODO* |
-| Teleop Demo | — | *Coming soon* |

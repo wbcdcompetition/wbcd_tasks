@@ -13,12 +13,12 @@ The competition time limit is **10 minutes**. The goal is to complete as many it
 - **Perception:** Participants must acquire external information **solely** through the robot's onboard perception system.
 - **Capacity:** There is no limit on the number of items transferred per single operation cycle, provided they are not dropped.
 
-### Step 1: Shelf Picking (Whole-Body Control)
+### Step 1: Shelf Picking 
 
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/track1_picking.gif" width="280">
+<img src="media/human_demon_unitree1.gif" width="280">
 
 </td><td valign="top">
 
@@ -40,7 +40,7 @@ Navigate the robot to the shelving unit and extract items. The difficulty varies
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/track1_transport.gif" width="280">
+<img src="media/human_demon_unitree2.gif" width="280">
 
 </td><td valign="top">
 
@@ -56,12 +56,12 @@ Transport the grasped items from the shelving area to the designated unloading a
 </td></tr>
 </table>
 
-### Step 3: Placement (Unloading)
+### Step 3: Placement 
 
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/track1_place.gif" width="280">
+<img src="media/human_demon_unitree3.gif" width="280">
 
 </td><td valign="top">
 

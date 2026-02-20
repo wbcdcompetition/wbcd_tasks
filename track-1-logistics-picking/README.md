@@ -2,19 +2,82 @@
 
 ## Overview
 
-This task simulates warehouse logistics picking. The system must transfer items from shelves at multiple heights to a transport vehicle within a fixed time limit, demonstrating speed, reliability, and careful handling across varying reach requirements.
+This task focuses on whole-body teleoperated control and end-effector coordination utilizing the **Unitree G1** humanoid robot. The objective is to bridge the gap between research and practical application by simulating a logistics scenario. Participants must use remote operation methods (VR, motion capture) to transfer items from shelves of varying heights to a transport vehicle. The system relies solely on the robot's own perception capabilities to execute complex maneuvers including upright, bent, and crouched postures.
 
 ## Task Rules
 
-Transfer items from shelves to a transport vehicle in the unloading area within the time limit.
+The competition time limit is **10 minutes**. The goal is to complete as many item transfer tasks as possible within this window.
 
-- **High shelves** — upright-reach transfer
-- **Low shelves** — bent-reach transfer
-- **Ground shelves** — ground-level transfer
+**Operational Constraints:**
+- **Control Method:** Remote operation via VR headset or inertial motion capture suit.
+- **Perception:** Participants must acquire external information **solely** through the robot's onboard perception system.
+- **Capacity:** There is no limit on the number of items transferred per single operation cycle, provided they are not dropped.
 
-There is no limit on the number of items transferred per operation, but items must not fall to the ground.
+### Step 1: Shelf Picking (Whole-Body Control)
 
-## Bill of Materials (Complete)
+<table>
+<tr><td width="280" valign="top">
+
+<img src="media/track1_picking.gif" width="280">
+
+</td><td valign="top">
+
+Navigate the robot to the shelving unit and extract items. The difficulty varies by shelf height, requiring specific body postures (Upright, Bent, or Crouched).
+
+| Action | Description | Posture |
+|--------|-------------|---------|
+| 1a | Pick item from Top Shelf | Upright Position |
+| 1b | Pick item from Middle Shelf | Bent Position |
+| 1c | Pick item from Bottom Shelf | Crouched Position |
+
+**Success Criteria:** Item securely grasped from the shelf without knocking over other items.
+
+</td></tr>
+</table>
+
+### Step 2: Transportation
+
+<table>
+<tr><td width="280" valign="top">
+
+<img src="media/track1_transport.gif" width="280">
+
+</td><td valign="top">
+
+Transport the grasped items from the shelving area to the designated unloading area.
+
+| Action | Description |
+|--------|-------------|
+| 2a | Stabilize item(s) during locomotion |
+| 2b | Navigate to the transport vehicle/table |
+
+**Success Criteria:** Maintain grasp on items throughout the movement. **Drops result in penalties.**
+
+</td></tr>
+</table>
+
+### Step 3: Placement (Unloading)
+
+<table>
+<tr><td width="280" valign="top">
+
+<img src="media/track1_place.gif" width="280">
+
+</td><td valign="top">
+
+Place the items onto the transport vehicle or unloading table.
+
+| Action | Description |
+|--------|-------------|
+| 3a | Position item over target area |
+| 3b | Release item securely |
+
+**Success Criteria:** Item rests stably on the unloading surface.
+
+</td></tr>
+</table>
+
+## Bill of Materials
 
 | Index | Category | Name | Source | Article num | Product name | Appearance | Dimensional details (cm) | Quantities | Item price (in USD) | Link | PS |
 |:---:|:---:|---|:---:|:---:|---|:---:|:---:|:---:|---:|:---:|---|
@@ -41,7 +104,47 @@ Printable STL and source CAD files are in [`parts/`](parts/).
 
 ## Scoring
 
-| Criterion | Description |
-|-----------|-------------|
-| **Time Efficiency** | Number of items transferred within 10 minutes; minimum time per individual transfer |
-| **Quality Standard** | Success rate of picking from shelves; number of drops during transportation |
+### Competition Rules
+
+- **Time limit:** 10 minutes per team.
+- **Objective:** Maximize total score by transferring items of varying difficulty.
+- **Definition of Success:** A transfer is complete when an item is taken from a shelf and placed on the unloading area table within the time limit.
+- **Perception:** Only robot-onboard sensors allowed (no external global cameras for the operator).
+
+### Point Breakdown
+
+Scoring is weighted based on the difficulty of the whole-body motion required (posture).
+
+#### Item Transfer Scoring
+
+| Source | Posture | Points | Criteria |
+|--------|:-------:|:------:|----------|
+| **Top Shelf** | Upright | **5** | Successful transfer from high shelf |
+| **Middle Shelf** | Bent | **8** | Successful transfer from low/middle shelf |
+| **Bottom Shelf** | Crouched | **10** | Successful transfer from ground/bottom shelf |
+
+### Penalties
+
+Penalties are deducted from the total score for failures in reliability.
+
+| Violation | Penalty | Notes |
+|-----------|:-------:|-------|
+| **Item Drop** | **-3 pts** | Deducted per item dropped during transportation (between shelf and table) |
+
+### Evaluation Metrics
+
+Beyond the raw score, teams are evaluated on:
+1.  **Time Efficiency:** Minimum time required to complete a single item transfer.
+2.  **Quality Standard:** Success rate of grabbing items and stability (number of drops).
+
+### Example
+
+> A team operates for 10 minutes, transferring a mix of items:
+>
+> | Item Type | Qty | Points | Subtotal |
+> |:---------:|:---:|:------:|:--------:|
+> | Top Shelf | 4 | 5 | 20 |
+> | Middle Shelf | 2 | 8 | 16 |
+> | Bottom Shelf | 1 | 10 | 10 |
+> | **Drops** | 2 | -3 | -6 |
+> | | | **Total** | **40** |

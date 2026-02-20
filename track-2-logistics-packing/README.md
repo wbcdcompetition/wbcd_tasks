@@ -2,25 +2,81 @@
 
 ## Overview
 
-This task simulates stationary packing in a logistics environment. The system must pick items from moving bins on a conveyor belt and organize them into a target packing container, demonstrating efficient and precise pick-and-place capability.
+The objective of this challenge is to demonstrate robotic capabilities in logistics fulfillment. The system must pick, scan, and pack items from a primary storage container into three designated shipping parcels. The workflow involves handling diverse items (rigid boxes, irregular shapes, and soft apparel), identifying barcodes via wrist-mounted cameras, and securing the parcels by closing their lids.
 
 ## Task Rules
 
-Pick items from 10 moving bins on a conveyor belt and organize them in a target packing bin.
+The competition window is **30 minutes**. Teams must fulfill as many shipping parcels as possible within this time. The workflow consists of three main sequential steps per item/parcel.
 
-### Picking
+**Setup & Reset:**
+- Participants may configure the placement of storage containers, shipping parcels, and the table.
+- Time required for scene resets is **excluded** from the 30-minute competition window.
+- **Human Intervention:** If a human intervenes during a cycle, the task for that specific item is terminated immediately, and a partial score is recorded.
 
-- 10 bins move along the conveyor at a controlled speed
-- Each bin contains identical items
-- Items vary between bins (shape, size, weight)
-- Time limit per bin at the picking point
+### Step 1: Picking & Scanning
 
-### Packing Options
+<table>
+<tr><td width="280" valign="top">
 
-| Option | Description |
+<img src="media/track2_demo_step1.gif" width="280">
+
+</td><td valign="top">
+
+Grasp an item from the storage container and identify it. The container is pre-loaded with various items (boxes, irregular objects, soft bags).
+
+| Action | Description |
 |--------|-------------|
-| **Standard** | Rigid plastic container as packing bin |
-| **Advanced** | Cardboard box with additional box closure requirement |
+| 1a | Grasp and extract an item from the storage container |
+| 1b | Scan the barcode using a wrist-mounted camera |
+| 1c | Receive index corresponding to one of the 3 shipping parcels |
+
+**Success Criteria:** Item securely grasped, barcode successfully identified, target parcel determined.
+
+</td></tr>
+</table>
+
+### Step 2: Placing
+
+<table>
+<tr><td width="280" valign="top">
+
+<img src="media/track2_demo_step2.gif" width="280">
+
+</td><td valign="top">
+
+Transition the picked item to the designated shipping parcel.
+
+| Action | Description |
+|--------|-------------|
+| 2a | Move the item to the assigned shipping parcel |
+| 2b | Place the item securely inside the parcel |
+
+**Success Criteria:** Item placed in the correct parcel (1 of 3) without dropping.
+
+</td></tr>
+</table>
+
+### Step 3: Packing (Lid Closing)
+
+<table>
+<tr><td width="280" valign="top">
+
+<img src="media/track2_demo_step3.gif" width="280">
+
+</td><td valign="top">
+
+Once a parcel is full or the sequence is complete, operate the parcel lid mechanism to secure the package.
+
+| Action | Description |
+|--------|-------------|
+| 3a | Fold the box lid flat |
+| 3b | Tuck in the two-sided lips |
+| 3c | Engage the locking lid mechanism |
+
+**Success Criteria:** Lid is closed flat, lips are tucked, and the box is locked.
+
+</td></tr>
+</table>
 
 ## Bill of Materials
 
@@ -50,7 +106,41 @@ Printable STL and source CAD files are in [`parts/`](parts/).
 
 ## Scoring
 
-| Criterion | Description |
-|-----------|-------------|
-| **Time Efficiency** | Total picking time (cumulative for 10 items); total packing time (cumulative for 10 placements) |
-| **Quality Standard** | Items stacked tightly and neatly, not exceeding bin height; for advanced option, cardboard box must be properly sealed |
+### Competition Rules
+
+- **Time limit:** 30 minutes per team.
+- **Workflow:** Pick → Scan → Place → Pack.
+- **Intervention:** Human intervention terminates the task for the specific item (partial score recorded).
+- **Placement:** Teams determine the layout of the table, container, and parcels.
+
+### Point Breakdown
+
+Scoring is based on the successful processing of individual items and the final state of the parcel closing mechanism.
+
+#### Item Processing
+
+| Action | Points | Criteria |
+|--------|:------:|----------|
+| Pick, Scan, Place | +5 | Successfully picks, scans, and places one item |
+| Wrong Parcel | -5 | Penalty applied if item is placed in incorrect parcel |
+
+#### Parcel Finalization (Lid Closing)
+
+Points for lid closing are cumulative based on the quality of the fold.
+
+| Action | Points | Criteria |
+|--------|:------:|----------|
+| Lid Flat | +5 | Box lid is covered flat without item sticking out |
+| Side Lips | +10 | The two-sided lips both stick in |
+| Locking Lid | +15 | Locking mechanism securely sticks in |
+
+### Example
+
+> A robot processes an item correctly but places it in the wrong box, then successfully closes another box fully:
+>
+> | Action | Result | Score |
+> |:-----:|:------:|:-----:|
+> | Item A | Pick/Scan/Place (+5) but Wrong Parcel (-5) | 0 |
+> | Item B | Pick/Scan/Place Correctly | +5 |
+> | Parcel Closing | Locking Lid Fully Closed | +15 |
+> | | **Total** | **20** |

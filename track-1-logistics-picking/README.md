@@ -22,6 +22,12 @@ The competition time limit is **10 minutes**. The goal is to complete as many it
 
 </td><td valign="top">
 
+<tr><td width="280" valign="top">
+
+<img src="media/robot_demo_1.gif" width="280">
+
+</td><td valign="top">
+
 Navigate the robot to the shelving unit and extract items. The difficulty varies by shelf height, requiring specific body postures (Upright, Bent, or Crouched).
 
 | Action | Description | Posture |
@@ -44,6 +50,12 @@ Navigate the robot to the shelving unit and extract items. The difficulty varies
 
 </td><td valign="top">
 
+<tr><td width="280" valign="top">
+
+<img src="media/robot_demo_2.gif" width="280">
+
+</td><td valign="top">
+
 Transport the grasped items from the shelving area to the designated unloading area.
 
 | Action | Description |
@@ -62,6 +74,12 @@ Transport the grasped items from the shelving area to the designated unloading a
 <tr><td width="280" valign="top">
 
 <img src="media/human_demo_unitree3.gif" width="280">
+
+</td><td valign="top">
+
+<tr><td width="280" valign="top">
+
+<img src="media/robot_demo_3.gif" width="280">
 
 </td><td valign="top">
 

@@ -6,7 +6,12 @@ This task simulates a laboratory automation workflow. The system handles high-de
 
 ## Task Rules
 
-Teams perform **Steps 1 → 2 → 3 in order** as one round. After completing a round, the workspace is reset and the next round begins. All three steps are **mandatory per round** — you cannot skip a step or reorder them. The goal is to complete as many rounds as possible within the time limit.
+The competition time limit is **20 minutes**. Teams perform **Steps 1 → 2 → 3 in order** as one round. After completing a round, the workspace is reset and the next round begins. The goal is to complete as many rounds as possible within this window.
+
+**Operational Constraints (Setup & Reset):**
+- **Mandatory sequence:** All three steps must be attempted per round — you cannot skip a step or reorder them. A new round cannot begin until the current round's Step 3 is completed or attempted.
+- **Reset Time:** Time spent resetting the workspace between rounds is excluded from the 20-minute competition window.
+- **Cumulative scoring:** Points earned in a partially completed round (when time expires) still count.
 
 ### Step 1: Sample Loading
 
@@ -104,10 +109,9 @@ Printable STL and source CAD files are in [`parts/`](parts/). Click any file on 
 
 ### Competition Rules
 
-- **Time limit:** Fixed per match (defined by the organizer).
+- **Time limit:** 20 minutes per team.
 - **Rounds:** Each round = Step 1 → Step 2 → Step 3, performed in order.
-- **Mandatory sequence:** All three steps must be attempted per round. A new round cannot begin until the current round's Step 3 is completed or attempted.
-- **Cumulative scoring:** Total score = sum of all points earned across all rounds within the time limit. Points earned in a partially completed round (when time expires) still count.
+- **Objective:** Maximize total score by completing as many rounds as possible.
 
 ### Point Breakdown
 
@@ -139,7 +143,7 @@ Each step is worth **20 points per round** (60 points per complete round). The t
 | 3c – Insert tubing | 5 | Tubing inserted into target bottle |
 | 3d – Replace cap | 5 | Cap re-secured on source bottle |
 
-### Penalties
+#### Penalties
 
 | Violation | Penalty |
 |-----------|---------|

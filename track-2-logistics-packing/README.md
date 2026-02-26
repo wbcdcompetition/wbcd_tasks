@@ -8,7 +8,7 @@ The objective of this challenge is to demonstrate robotic capabilities in logist
 
 The competition window is **30 minutes**. Teams must fulfill as many shipping parcels as possible within this time. The workflow consists of three main sequential steps per item/parcel.
 
-**Setup & Reset:**
+**Operational Constraints (Setup & Reset):**
 - Participants may configure the placement of storage containers, shipping parcels, and the table.
 - Time required for scene resets is **excluded** from the 30-minute competition window.
 - **Human Intervention:** If a human intervenes during a cycle, the task for that specific item is terminated immediately, and a partial score is recorded.

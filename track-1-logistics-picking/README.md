@@ -8,7 +8,7 @@ This task focuses on whole-body teleoperated control and end-effector coordinati
 
 The competition time limit is **10 minutes**. The goal is to complete as many item transfer tasks as possible within this window.
 
-**Operational Constraints:**
+**Operational Constraints (Setup & Reset):**
 - **Control Method:** Remote operation via VR headset or inertial motion capture suit.
 - **Perception:** Participants must acquire external information **solely** through the robot's onboard perception system.
 - **Capacity:** There is no limit on the number of items transferred per single operation cycle, provided they are not dropped.
@@ -18,7 +18,7 @@ The competition time limit is **10 minutes**. The goal is to complete as many it
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/human_demon_unitree1.gif" width="280">
+<img src="media/human_demo_unitree1.gif" width="280">
 
 </td><td valign="top">
 
@@ -40,7 +40,7 @@ Navigate the robot to the shelving unit and extract items. The difficulty varies
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/human_demon_unitree2.gif" width="280">
+<img src="media/human_demo_unitree2.gif" width="280">
 
 </td><td valign="top">
 
@@ -61,7 +61,7 @@ Transport the grasped items from the shelving area to the designated unloading a
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/human_demon_unitree3.gif" width="280">
+<img src="media/human_demo_unitree3.gif" width="280">
 
 </td><td valign="top">
 
@@ -119,23 +119,10 @@ Scoring is weighted based on the difficulty of the whole-body motion required (p
 
 | Source | Posture | Points | Criteria |
 |--------|:-------:|:------:|----------|
-| **Top Shelf** | Upright | **5** | Successful transfer from high shelf |
-| **Middle Shelf** | Bent | **8** | Successful transfer from low/middle shelf |
-| **Bottom Shelf** | Crouched | **10** | Successful transfer from ground/bottom shelf |
-
-### Penalties
-
-Penalties are deducted from the total score for failures in reliability.
-
-| Violation | Penalty | Notes |
-|-----------|:-------:|-------|
-| **Item Drop** | **-3 pts** | Deducted per item dropped during transportation (between shelf and table) |
-
-### Evaluation Metrics
-
-Beyond the raw score, teams are evaluated on:
-1.  **Time Efficiency:** Minimum time required to complete a single item transfer.
-2.  **Quality Standard:** Success rate of grabbing items and stability (number of drops).
+| **Top Shelf** | Upright | **+5** | Successful transfer from high shelf |
+| **Middle Shelf** | Bent | **+8** | Successful transfer from low/middle shelf |
+| **Bottom Shelf** | Crouched | **+10** | Successful transfer from ground/bottom shelf |
+| **Item Drop** | — | **-3** | Per item dropped during transportation (between shelf and table) |
 
 ### Example
 

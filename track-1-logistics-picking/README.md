@@ -135,3 +135,8 @@ Scoring is weighted based on the difficulty of the whole-body motion required (p
 > | Bottom Shelf | 1 | 10 | 10 |
 > | **Drops** | 2 | -3 | -6 |
 > | | | **Total** | **40** |
+
+## Coming Soon
+
+- **Datasets** — UMI and/or real robot teleoperation datasets for this task
+- **Simulation Environment** — digital-twin simulator for this task

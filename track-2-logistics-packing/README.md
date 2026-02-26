@@ -144,3 +144,8 @@ Points for lid closing are cumulative based on the quality of the fold.
 > | Item B | Pick/Scan/Place Correctly | +5 |
 > | Parcel Closing | Locking Lid Fully Closed | +15 |
 > | | **Total** | **20** |
+
+## Coming Soon
+
+- **Datasets** — UMI and/or real robot teleoperation datasets for this task
+- **Simulation Environment** — digital-twin simulator for this task

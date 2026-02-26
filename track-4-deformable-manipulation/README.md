@@ -111,3 +111,8 @@ Align the T-shirt with pallet edges and ensure a flat surface without wrinkles.
 > | 2 | Pick + Load | Picked two T-shirts (-5), reloaded one | +5 -5 |
 > | 2 | Alignment + Surface | Good alignment, smooth surface | +5 |
 > | | | **Total** | **+10** |
+
+## Coming Soon
+
+- **Datasets** — UMI and/or real robot teleoperation datasets for this task
+- **Simulation Environment** — digital-twin simulator for this task

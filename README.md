@@ -28,6 +28,11 @@ Each task includes reference videos demonstrating the expected workflow:
 - **Human demonstrations** — task performed by a human operator
 - **Teleoperation demonstrations** — task performed via robot teleoperation *(coming soon)*
 
+## Coming Soon
+
+- **Datasets** — UMI and/or real robot teleoperation datasets for each task
+- **Simulation Environments** — digital-twin simulators for each task
+
 ## Resources
 
 - **Competition Website**: <https://wbcdcompetition.github.io/>

@@ -163,3 +163,8 @@ Each step is worth **20 points per round** (60 points per complete round). The t
 > | 3 | 20 | 15 | 20 | 55 |
 > | 4 | 20 | 10 | — | 30 |
 > | | | | **Total** | **195** |
+
+## Coming Soon
+
+- **Datasets** — UMI and/or real robot teleoperation datasets for this task
+- **Simulation Environment** — digital-twin simulator for this task

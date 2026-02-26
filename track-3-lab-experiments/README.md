@@ -89,9 +89,9 @@ Switch the solvent supply line from bottle A to bottle B by operating threaded c
 | <img src="media/2ml_sample_vial_rack.jpg" height="80"> | 2 mL Sample Vial Rack | 1 | 120 | [Taobao](https://item.taobao.com/item.htm?id=710110090808) |
 | <img src="media/8ml_glass_vial.jpg" height="80"> | 8 mL Glass Vial | Per setup | 1.5 | [Taobao](https://item.taobao.com/item.htm?id=19991893535) |
 | <img src="media/8ml_glass_vial_rack.jpg" height="80"> | 8 mL Glass Vial Rack | 1 | — | In-house stock |
-| <img src="media/" height="80"> | 1 L Solvent Bottle | 2 | 20 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5701565429700) |
-| <img src="media/" height="80"> | Flexible Tubing + Filter Head | 1 set | 100 | [Tmall](https://detail.tmall.com/item.htm?id=956086151290&skuId=6049729811075) |
-| <img src="media/" height="80"> | Spare Bottle Cap | 2 | 8 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5762711841749) |
+| <img src="media/1LSolvent_Bottle.png" height="80"> | 1 L Solvent Bottle | 2 | 20 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5701565429700) |
+| <img src="media/Flexible_Tubing+Filter_Head.png" height="80"> | Flexible Tubing + Filter Head | 1 set | 100 | [Tmall](https://detail.tmall.com/item.htm?id=956086151290&skuId=6049729811075) |
+| <img src="media/SpareBottleCap.png" height="80"> | Spare Bottle Cap | 2 | 8 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5762711841749) |
 
 ### 3D-Printed Parts
 

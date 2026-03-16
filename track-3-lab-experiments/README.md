@@ -88,8 +88,8 @@ Switch the solvent supply line from bottle A to bottle B by operating threaded c
 | <img src="media/2ml_sample_vial.jpg" height="80"> | 2 mL Sample Vial | Per setup | 0.4 | [Taobao](https://item.taobao.com/item.htm?id=17615677498) |
 | <img src="media/2ml_sample_vial_rack.jpg" height="80"> | 2 mL Sample Vial Rack | 1 | 120 | [Taobao](https://item.taobao.com/item.htm?id=710110090808) |
 | <img src="media/8ml_glass_vial.jpg" height="80"> | 8 mL Glass Vial | Per setup | 1.5 | [Taobao](https://item.taobao.com/item.htm?id=19991893535) |
-| <img src="media/8ml_glass_vial_rack.jpg" height="80"> | 8 mL Glass Vial Rack | 1 | — | In-house stock |
-| <img src="media/1LSolvent_Bottle.png" height="80"> | 1 L Solvent Bottle | 2 | 20 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5701565429700) |
+| <img src="media/8ml_glass_vial_rack.jpg" height="80"> | 8 mL Glass Vial Rack | 1 | self-printed | In-house stock |
+| <img src="media/1LSolvent_Bottle.png" height="80"> | 500mL Solvent Bottle | 2 | 13.12 | [Tmall](https://detail.tmall.com/item.htm?app=chrome&bxsign=scdYgqU44PMI89owadFI75sB1AKZoK-56RJ-S0sGQMMQCRSMt85P7s_MWn1Zi2EDgmwTDBX0cNlR53ioUYeZTSzemEHAf_KfzD0UP6RO9DM0KASlpvjyj9DhgdZygutLxYs&cpp=1&id=869789079507&price=13.12&shareUniqueId=35385001152&share_crt_v=1&shareurl=true&short_name=h.iUwsuCzZsSsNdJS&skuId=5701565429699&sourceType=item%2Citem&sp_tk=Y1JxY1VDVm9NZnQ%3D&spm=a2159r.13376460.0.0&suid=e57d488b-6d6f-4727-b3e2-5cdbf43f0b1a&tbSocialPopKey=shareItem&tk=cRqcUCVoMft&un=89f5c99caa22df09defba349c3f14615&un_site=0&ut_sk=1.aW3bAFvpTXYDAIgzFZZTpDpb_21646297_1773634888738.Copy.1&wxsign=tbwYdZcFKjVktSwOIbAfreMg-q47_HrpJ1qddFoIl80b9bFAj8OwWKDz70JBQTxcrfj-pVLJdn1IgXb8SOiEbgdg7jMyGGiHDKkmCU838rghPgcLYXEuDKL6kqNZU3FbWFD) |
 | <img src="media/Flexible_Tubing+Filter_Head.png" height="80"> | Flexible Tubing + Filter Head | 1 set | 100 | [Tmall](https://detail.tmall.com/item.htm?id=956086151290&skuId=6049729811075) |
 | <img src="media/SpareBottleCap.png" height="80"> | Spare Bottle Cap | 2 | 8 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5762711841749) |
 

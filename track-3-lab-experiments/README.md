@@ -102,7 +102,7 @@ Printable STL and source CAD files are in [`parts/`](parts/). Click any file on 
 | [`2ml-sample-vial.stl`](parts/2ml-sample-vial.stl) | 2 mL Sample Vial | Step 1 |
 | [`2ml-sample-vial-rack.stl`](parts/2ml-sample-vial-rack.stl) | 2 mL Sample Vial Rack | Step 1, 2 |
 | [`8ml-glass-vial.stl`](parts/8ml-glass-vial.stl) | 8 mL Glass Vial | Step 1 |
-| [`8ml-glass-vial-rack.stl`](parts/8ml-glass-vial-rack.stl) | 8 mL Glass Vial Rack | Step 1, 2 |
+| [`8ml-glass-vial-rack-refine.stl`](parts/8ml-glass-vial-rack-refine.stl) | 8 mL Glass Vial Rack | Step 1, 2 |
 | [`1l-solvent-bottle.stl`](parts/1l-solvent-bottle.stl) | 1 L Solvent Bottle | Step 3 |
 
 ## Scoring

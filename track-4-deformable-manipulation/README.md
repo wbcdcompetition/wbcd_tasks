@@ -75,6 +75,29 @@ Align the T-shirt with pallet edges and ensure a flat surface without wrinkles.
 </td></tr>
 </table>
 
+## Human demonstration
+
+Reference videos of a human performing the task (complementing the robot clips above).
+
+<table>
+<tr>
+<td width="280" valign="top" align="center">
+
+<strong>Human demo 1</strong><br><br>
+
+<video src="media/human_demo1.mp4" width="280" controls playsinline></video>
+
+</td>
+<td width="280" valign="top" align="center">
+
+<strong>Human demo 2</strong><br><br>
+
+<video src="media/human_demo2.mp4" width="280" controls playsinline></video>
+
+</td>
+</tr>
+</table>
+
 ## Bill of Materials
 
 | Image | Item | Qty | Price (CNY) | Supplier link |

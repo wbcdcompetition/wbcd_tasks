@@ -18,11 +18,12 @@ The competition time limit is **20 minutes**. Teams perform **Steps 1 → 2 → 
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/human_demo_step1.gif" width="280">
+<img src="media/human_demo_step1.gif" width="280"><br>
+<video src="media/robot_demo_step1.mp4" width="280" controls playsinline></video>
 
 </td><td valign="top">
 
-Place vials into partially filled racks (dense packing). The racks already contain vials in most positions — seat the remaining vials into the correct empty slots.
+Seat vials into the corresponding racks. Two difficulty levels apply (see below).
 
 | Action | Description |
 |--------|-------------|
@@ -31,7 +32,16 @@ Place vials into partially filled racks (dense packing). The racks already conta
 | 1c | Seat an 8 mL vial into the 8 mL rack |
 | 1d | Seat an 8 mL vial into the 8 mL rack |
 
-**Success Criteria:** All 4 vials fully inserted, upright, correct positions. No damage or drops.
+**Difficulty Levels** (team chooses before each round; affects Step 1 score multiplier):
+
+| Level | Rack State | Target Position | Score Multiplier |
+|-------|-----------|-----------------|:----------------:|
+| **Easy** | Rack is **empty** | A corner of the team's choice | ×1.0 |
+| **Hard** | Rack is **partially filled** (only 4 empty slots remain) | Random empty slots (randomized each round) | ×1.5 |
+
+**Start state:** Vials placed at random positions on the table within the robot's reachable workspace. Racks placed at designated positions.
+
+**End state:** All 4 vials fully inserted, upright, in correct positions. No damage or drops.
 
 </td></tr>
 </table>
@@ -41,11 +51,12 @@ Place vials into partially filled racks (dense packing). The racks already conta
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/human_demo_step2.gif" width="280">
+<img src="media/human_demo_step2.gif" width="280"><br>
+<video src="media/robot_demo_step2.mp4" width="280" controls playsinline></video>
 
 </td><td valign="top">
 
-Load a sample rack into an analytical instrument by operating its drawer mechanism.
+Load a sample rack into an analytical instrument by operating its 3D-printed drawer mechanism.
 
 | Action | Description |
 |--------|-------------|
@@ -53,7 +64,9 @@ Load a sample rack into an analytical instrument by operating its drawer mechani
 | 2b | Place the rack in the correct position |
 | 2c | Close the instrument drawer |
 
-**Success Criteria:** Drawer opened/closed without excessive force. Rack in correct position.
+**Start state:** Instrument drawer closed. Rack placed at a random position on the table within the robot's reachable workspace.
+
+**End state:** Rack seated in the correct position inside the drawer. Drawer fully closed without excessive force.
 
 </td></tr>
 </table>
@@ -63,7 +76,8 @@ Load a sample rack into an analytical instrument by operating its drawer mechani
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/human_demo_step3.gif" width="280">
+<img src="media/human_demo_step3.gif" width="280"><br>
+<video src="media/robot_demo_step3.mp4" width="280" controls playsinline></video>
 
 </td><td valign="top">
 
@@ -76,7 +90,9 @@ Switch the solvent supply line from bottle A to bottle B by operating threaded c
 | 3c | Insert the tubing into the target bottle |
 | 3d | Replace the cap on the source bottle |
 
-**Success Criteria:** Caps intact, tubing relocated, bottles upright, no spills.
+**Start state:** Tubing inserted in source bottle (cap on target bottle). Both bottles placed at random positions on the table within the robot's reachable workspace.
+
+**End state:** Tubing relocated to target bottle. Cap re-secured on source bottle. Both bottles upright, no spills.
 
 </td></tr>
 </table>
@@ -92,6 +108,7 @@ Switch the solvent supply line from bottle A to bottle B by operating threaded c
 | <img src="media/1LSolvent_Bottle.png" height="80"> | 500mL Solvent Bottle | 2 | 13.12 | [Tmall](https://detail.tmall.com/item.htm?app=chrome&bxsign=scdYgqU44PMI89owadFI75sB1AKZoK-56RJ-S0sGQMMQCRSMt85P7s_MWn1Zi2EDgmwTDBX0cNlR53ioUYeZTSzemEHAf_KfzD0UP6RO9DM0KASlpvjyj9DhgdZygutLxYs&cpp=1&id=869789079507&price=13.12&shareUniqueId=35385001152&share_crt_v=1&shareurl=true&short_name=h.iUwsuCzZsSsNdJS&skuId=5701565429699&sourceType=item%2Citem&sp_tk=Y1JxY1VDVm9NZnQ%3D&spm=a2159r.13376460.0.0&suid=e57d488b-6d6f-4727-b3e2-5cdbf43f0b1a&tbSocialPopKey=shareItem&tk=cRqcUCVoMft&un=89f5c99caa22df09defba349c3f14615&un_site=0&ut_sk=1.aW3bAFvpTXYDAIgzFZZTpDpb_21646297_1773634888738.Copy.1&wxsign=tbwYdZcFKjVktSwOIbAfreMg-q47_HrpJ1qddFoIl80b9bFAj8OwWKDz70JBQTxcrfj-pVLJdn1IgXb8SOiEbgdg7jMyGGiHDKkmCU838rghPgcLYXEuDKL6kqNZU3FbWFD) |
 | <img src="media/Flexible_Tubing+Filter_Head.png" height="80"> | Flexible Tubing + Filter Head | 1 set | 100 | [Tmall](https://detail.tmall.com/item.htm?id=956086151290&skuId=6049729811075) |
 | <img src="media/SpareBottleCap.png" height="80"> | Spare Bottle Cap | 2 | 8 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5762711841749) |
+| <img src="media/instrument_drawer_assembly.png" height="80"> | Instrument Drawer Assembly | 1 | self-printed | [`drawer.stl`](parts/drawer.stl) |
 
 ### 3D-Printed Parts
 
@@ -103,7 +120,42 @@ Printable STL and source CAD files are in [`parts/`](parts/). Click any file on 
 | [`2ml-sample-vial-rack.stl`](parts/2ml-sample-vial-rack.stl) | 2 mL Sample Vial Rack | Step 1, 2 |
 | [`8ml-glass-vial.stl`](parts/8ml-glass-vial.stl) | 8 mL Glass Vial | Step 1 |
 | [`8ml-glass-vial-rack-refine.stl`](parts/8ml-glass-vial-rack-refine.stl) | 8 mL Glass Vial Rack | Step 1, 2 |
+| [`drawer.stl`](parts/drawer.stl) | Instrument Drawer Assembly | Step 2 |
 | [`1l-solvent-bottle.stl`](parts/1l-solvent-bottle.stl) | 1 L Solvent Bottle | Step 3 |
+
+> **Instrument Drawer** — `drawer.stl` prints as a single piece (print-in-place, no assembly required). The reference files [`instrument-cabinet.stl`](parts/instrument-cabinet.stl) and [`instrument-drawer.stl`](parts/instrument-drawer.stl) show the cabinet and drawer components separately for reference.
+>
+> <img src="media/instrument_drawer_assembly.png" width="600">
+
+## Robot Demonstration
+
+Reference videos of the robot performing the task (human-teleoperated), showing the full workflow.
+
+<table>
+<tr>
+<td width="280" valign="top" align="center">
+
+<strong>Step 1: Sample Loading</strong><br><br>
+
+<video src="media/robot_demo_step1.mp4" width="280" controls playsinline></video>
+
+</td>
+<td width="280" valign="top" align="center">
+
+<strong>Step 2: Instrument Interfacing</strong><br><br>
+
+<video src="media/robot_demo_step2.mp4" width="280" controls playsinline></video>
+
+</td>
+<td width="280" valign="top" align="center">
+
+<strong>Step 3: Mobile Phase Management</strong><br><br>
+
+<video src="media/robot_demo_step3.mp4" width="280" controls playsinline></video>
+
+</td>
+</tr>
+</table>
 
 ## Scoring
 
@@ -112,36 +164,40 @@ Printable STL and source CAD files are in [`parts/`](parts/). Click any file on 
 - **Time limit:** 20 minutes per team.
 - **Rounds:** Each round = Step 1 → Step 2 → Step 3, performed in order.
 - **Objective:** Maximize total score by completing as many rounds as possible.
+- **Difficulty choice:** Teams select Easy or Hard for Step 1 **before each round**. The choice applies a score multiplier to Step 1 only.
+- **Randomization:** Object initial positions are randomized each round but always within the robot's reachable workspace. For Step 1 Hard mode, the occupied/empty slots in the rack are also randomized.
 
 ### Point Breakdown
 
-Each step is worth **20 points per round** (60 points per complete round). The three steps are balanced to ensure no step is worth skipping.
+Steps 2 and 3 are worth **20 points each per round**. Step 1 base score is **20 points**, multiplied by the difficulty factor (×1.0 Easy, ×1.5 Hard → **20 or 30 pts**).
 
-#### Step 1 — Sample Loading (20 pts)
+#### Step 1 — Sample Loading (20 pts base × difficulty)
 
-| Action | Points | Criteria |
-|--------|:------:|----------|
-| 1a – Seat 2 mL vial | 5 | Vial fully inserted, upright, correct position |
-| 1b – Seat 2 mL vial | 5 | Same |
-| 1c – Seat 8 mL vial | 5 | Vial fully inserted, upright, correct position |
-| 1d – Seat 8 mL vial | 5 | Same |
+| Action | Base Points | Start → End | Criteria |
+|--------|:------:|-------------|----------|
+| 1a – Seat 2 mL vial | 5 | Vial on table → seated in 2 mL rack | Vial fully inserted, upright, correct position |
+| 1b – Seat 2 mL vial | 5 | Vial on table → seated in 2 mL rack | Same |
+| 1c – Seat 8 mL vial | 5 | Vial on table → seated in 8 mL rack | Vial fully inserted, upright, correct position |
+| 1d – Seat 8 mL vial | 5 | Vial on table → seated in 8 mL rack | Same |
+
+> **Easy mode:** 20 × 1.0 = **20 pts** max &nbsp;|&nbsp; **Hard mode:** 20 × 1.5 = **30 pts** max
 
 #### Step 2 — Instrument Interfacing (20 pts)
 
-| Action | Points | Criteria |
-|--------|:------:|----------|
-| 2a – Open drawer | 5 | Drawer fully extended without excessive force |
-| 2b – Place rack | 10 | Rack in correct position and orientation |
-| 2c – Close drawer | 5 | Drawer fully closed |
+| Action | Points | Start → End | Criteria |
+|--------|:------:|-------------|----------|
+| 2a – Open drawer | 5 | Drawer closed → drawer fully extended | Drawer fully extended without excessive force |
+| 2b – Place rack | 10 | Rack on table → rack seated in drawer | Rack in correct position and orientation |
+| 2c – Close drawer | 5 | Drawer open with rack → drawer fully closed | Drawer fully closed flush with cabinet |
 
 #### Step 3 — Mobile Phase Management (20 pts)
 
-| Action | Points | Criteria |
-|--------|:------:|----------|
-| 3a – Remove cap | 5 | Cap unscrewed without stripping or spilling |
-| 3b – Remove tubing | 5 | Tubing cleanly removed from source bottle |
-| 3c – Insert tubing | 5 | Tubing inserted into target bottle |
-| 3d – Replace cap | 5 | Cap re-secured on source bottle |
+| Action | Points | Start → End | Criteria |
+|--------|:------:|-------------|----------|
+| 3a – Remove cap | 5 | Cap on target bottle → cap removed | Cap unscrewed without stripping or spilling |
+| 3b – Remove tubing | 5 | Tubing in source bottle → tubing removed | Tubing cleanly removed from source bottle |
+| 3c – Insert tubing | 5 | Tubing in hand → tubing in target bottle | Tubing inserted into target bottle |
+| 3d – Replace cap | 5 | Cap removed → cap on source bottle | Cap re-secured on source bottle |
 
 #### Penalties
 
@@ -156,13 +212,13 @@ Each step is worth **20 points per round** (60 points per complete round). The t
 
 > A team completes 3 full rounds and is mid-way through round 4 when time expires:
 >
-> | Round | Step 1 | Step 2 | Step 3 | Subtotal |
-> |:-----:|:------:|:------:|:------:|:--------:|
-> | 1 | 20 | 20 | 20 | 60 |
-> | 2 | 15 | 20 | 15 | 50 |
-> | 3 | 20 | 15 | 20 | 55 |
-> | 4 | 20 | 10 | — | 30 |
-> | | | | **Total** | **195** |
+> | Round | Difficulty | Step 1 (base × mult) | Step 2 | Step 3 | Subtotal |
+> |:-----:|:----------:|:---------------------:|:------:|:------:|:--------:|
+> | 1 | Easy | 20 × 1.0 = 20 | 20 | 20 | 60 |
+> | 2 | Hard | 15 × 1.5 = 22.5 | 20 | 15 | 57.5 |
+> | 3 | Hard | 20 × 1.5 = 30 | 15 | 20 | 65 |
+> | 4 | Easy | 20 × 1.0 = 20 | 10 | — | 30 |
+> | | | | | **Total** | **212.5** |
 
 ## Coming Soon
 

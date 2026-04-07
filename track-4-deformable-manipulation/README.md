@@ -113,6 +113,7 @@ Reference videos of a human performing the task (complementing the robot clips a
 - **Time limit:** 15 minutes per team.
 - **Objective:** Pick, load, and align a T-shirt on the printing pallet.
 - **Intervention:** Human intervention incurs a penalty as defined by competition rules.
+- **Autonomy multiplier:** Each step's score is scaled by its [autonomy level multiplier](../README.md#autonomy-level-multiplier) (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous). Teams may choose a different level per step.
 
 ### Point Breakdown
 

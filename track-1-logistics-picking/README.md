@@ -113,6 +113,7 @@ Printable STL and source CAD files are in [`parts/`](parts/). -->
 - **Objective:** Maximize total score by transferring items of varying difficulty.
 - **Definition of Success:** A transfer is complete when an item is taken from a shelf and placed on the unloading area table within the time limit.
 - **Perception:** Only robot-onboard sensors allowed (no external global cameras for the operator).
+- **Autonomy multiplier:** Each step's score is scaled by its [autonomy level multiplier](../README.md#autonomy-level-multiplier) (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous). Teams may choose a different level per step.
 
 ### Point Breakdown
 

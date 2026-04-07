@@ -21,12 +21,26 @@ This repository provides complete, open-source task specifications — including
 
 Each task page contains the complete specification: rules, bill of materials, and scoring criteria.
 
+## Autonomy Level Multiplier
+
+Task scores are scaled by an **autonomy multiplier** that reflects the level of human involvement during execution. Teams may choose a **different autonomy level for each step** within a task — there is no requirement to use the same level throughout.
+
+| Level | Description | Multiplier |
+|-------|-------------|:----------:|
+| **On-site Teleoperation** | Human operator is physically present and controls the robot with direct line-of-sight | ×1 |
+| **Remote Teleoperation** | Human operator controls the robot remotely via video feed only (no direct view of the scene; network latency applies) | ×2 |
+| **Fully Autonomous** | No human control during execution; the robot runs a learned or programmed policy end-to-end | ×4 |
+
+The multiplier is applied **per step**: each step's base score is multiplied by the autonomy level chosen for that step, and the results are summed to produce the final score.
+
+> **Note:** The multipliers above are competition-wide defaults. The optimal multiplier for a given task ultimately depends on its difficulty and content — these presets serve as a balanced starting point and may be adjusted per track in future editions.
+
 ## Media
 
 Each task includes reference videos demonstrating the expected workflow:
 
 - **Human demonstrations** — task performed by a human operator
-- **Teleoperation demonstrations** — task performed via robot teleoperation *(coming soon)*
+- **Robot demonstrations** — task performed via robot teleoperation, showing the full workflow
 
 ## Coming Soon
 

@@ -114,6 +114,7 @@ Printable STL and source CAD files are in [`parts/`](parts/).
 - **Workflow:** Pick → Scan → Place → Pack.
 - **Intervention:** Human intervention terminates the task for the specific item (partial score recorded).
 - **Placement:** Teams determine the layout of the table, container, and parcels.
+- **Autonomy multiplier:** Each step's score is scaled by its [autonomy level multiplier](../README.md#autonomy-level-multiplier) (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous). Teams may choose a different level per step.
 
 ### Point Breakdown
 

@@ -166,6 +166,7 @@ Reference videos of the robot performing the task (human-teleoperated), showing 
 - **Objective:** Maximize total score by completing as many rounds as possible.
 - **Difficulty choice:** Teams select Easy or Hard for Step 1 **before each round**. The choice applies a score multiplier to Step 1 only.
 - **Randomization:** Object initial positions are randomized each round but always within the robot's reachable workspace. For Step 1 Hard mode, the occupied/empty slots in the rack are also randomized.
+- **Autonomy multiplier:** Each step's score is scaled by its [autonomy level multiplier](../README.md#autonomy-level-multiplier) (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous). Teams may choose a different level per step.
 
 ### Point Breakdown
 
@@ -210,15 +211,15 @@ Steps 2 and 3 are worth **20 points each per round**. Step 1 base score is **20 
 
 ### Example
 
-> A team completes 3 full rounds and is mid-way through round 4 when time expires:
+> A team completes 3 full rounds and is mid-way through round 4 when time expires. They use different autonomy levels per step (autonomy multiplier shown in parentheses):
 >
-> | Round | Difficulty | Step 1 (base × mult) | Step 2 | Step 3 | Subtotal |
-> |:-----:|:----------:|:---------------------:|:------:|:------:|:--------:|
-> | 1 | Easy | 20 × 1.0 = 20 | 20 | 20 | 60 |
-> | 2 | Hard | 15 × 1.5 = 22.5 | 20 | 15 | 57.5 |
-> | 3 | Hard | 20 × 1.5 = 30 | 15 | 20 | 65 |
-> | 4 | Easy | 20 × 1.0 = 20 | 10 | — | 30 |
-> | | | | | **Total** | **212.5** |
+> | Round | Difficulty | Step 1 | Step 2 | Step 3 | Subtotal |
+> |:-----:|:----------:|:------:|:------:|:------:|:--------:|
+> | 1 | Easy | 20 × 1.0 × auto(×4) = 80 | 20 × teleop(×1) = 20 | 20 × teleop(×1) = 20 | 120 |
+> | 2 | Hard | 15 × 1.5 × auto(×4) = 90 | 20 × remote(×2) = 40 | 15 × teleop(×1) = 15 | 145 |
+> | 3 | Hard | 20 × 1.5 × auto(×4) = 120 | 15 × remote(×2) = 30 | 20 × teleop(×1) = 20 | 170 |
+> | 4 | Easy | 20 × 1.0 × auto(×4) = 80 | 10 × teleop(×1) = 10 | — | 90 |
+> | | | | | **Total** | **525** |
 
 ## Coming Soon
 

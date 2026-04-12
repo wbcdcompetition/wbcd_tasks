@@ -18,8 +18,9 @@ The competition time limit is **20 minutes**. Teams perform **Steps 1 → 2 → 
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/human_demo_step1.gif" width="280"><br>
-<video src="media/robot_demo_step1.mp4" width="280" controls playsinline></video>
+<img src="media/human_demo_step1.gif" width="280" alt="Human demo Step 1"><br>
+<img src="media/robot_demo_step1.gif" width="280" alt="Robot teleoperation demo Step 1"><br>
+<a href="media/robot_demo_step1.mp4">Source video (MP4)</a>
 
 </td><td valign="top">
 
@@ -51,8 +52,9 @@ Seat vials into the corresponding racks. Two difficulty levels apply (see below)
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/human_demo_step2.gif" width="280"><br>
-<video src="media/robot_demo_step2.mp4" width="280" controls playsinline></video>
+<img src="media/human_demo_step2.gif" width="280" alt="Human demo Step 2"><br>
+<img src="media/robot_demo_step2.gif" width="280" alt="Robot teleoperation demo Step 2"><br>
+<a href="media/robot_demo_step2.mp4">Source video (MP4)</a>
 
 </td><td valign="top">
 
@@ -76,8 +78,9 @@ Load a sample rack into an analytical instrument by operating its 3D-printed dra
 <table>
 <tr><td width="280" valign="top">
 
-<img src="media/human_demo_step3.gif" width="280"><br>
-<video src="media/robot_demo_step3.mp4" width="280" controls playsinline></video>
+<img src="media/human_demo_step3.gif" width="280" alt="Human demo Step 3"><br>
+<img src="media/robot_demo_step3.gif" width="280" alt="Robot teleoperation demo Step 3"><br>
+<a href="media/robot_demo_step3.mp4">Source video (MP4)</a>
 
 </td><td valign="top">
 
@@ -129,29 +132,29 @@ Printable STL and source CAD files are in [`parts/`](parts/). Click any file on 
 
 ## Robot Demonstration
 
-Reference videos of the robot performing the task (human-teleoperated), showing the full workflow.
+Reference animations of the robot performing the task (human-teleoperated), showing the full workflow. **Source video (MP4)** under each clip opens the original recording on GitHub (full quality and frame rate). All files also live in [`media/`](media/).
 
 <table>
 <tr>
 <td width="280" valign="top" align="center">
 
 <strong>Step 1: Sample Loading</strong><br><br>
-
-<video src="media/robot_demo_step1.mp4" width="280" controls playsinline></video>
+<img src="media/robot_demo_step1.gif" width="280" alt="Robot demonstration Step 1"><br>
+<a href="media/robot_demo_step1.mp4">Source video (MP4)</a>
 
 </td>
 <td width="280" valign="top" align="center">
 
 <strong>Step 2: Instrument Interfacing</strong><br><br>
-
-<video src="media/robot_demo_step2.mp4" width="280" controls playsinline></video>
+<img src="media/robot_demo_step2.gif" width="280" alt="Robot demonstration Step 2"><br>
+<a href="media/robot_demo_step2.mp4">Source video (MP4)</a>
 
 </td>
 <td width="280" valign="top" align="center">
 
 <strong>Step 3: Mobile Phase Management</strong><br><br>
-
-<video src="media/robot_demo_step3.mp4" width="280" controls playsinline></video>
+<img src="media/robot_demo_step3.gif" width="280" alt="Robot demonstration Step 3"><br>
+<a href="media/robot_demo_step3.mp4">Source video (MP4)</a>
 
 </td>
 </tr>

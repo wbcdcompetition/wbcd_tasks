@@ -123,7 +123,7 @@ Printable STL and source CAD files are in [`parts/`](parts/). Click any file on 
 | [`2ml-sample-vial-rack.stl`](parts/2ml-sample-vial-rack.stl) | 2 mL Sample Vial Rack | Step 1, 2 |
 | [`8ml-glass-vial.stl`](parts/8ml-glass-vial.stl) | 8 mL Glass Vial | Step 1 |
 | [`8ml-glass-vial-rack-refine.stl`](parts/8ml-glass-vial-rack-refine.stl) | 8 mL Glass Vial Rack | Step 1, 2 |
-| [`drawer.stl`](parts/drawer.stl) | Instrument Drawer Assembly | Step 2 |
+| [`drawer.stl`](parts/storage_drawer_new.stl) | Instrument Drawer Assembly | Step 2 |
 | [`1l-solvent-bottle.stl`](parts/1l-solvent-bottle.stl) | 1 L Solvent Bottle | Step 3 |
 
 > **Instrument Drawer** — `drawer.stl` prints as a single piece (print-in-place, no assembly required). The reference files [`instrument-cabinet.stl`](parts/instrument-cabinet.stl) and [`instrument-drawer.stl`](parts/instrument-drawer.stl) show the cabinet and drawer components separately for reference.

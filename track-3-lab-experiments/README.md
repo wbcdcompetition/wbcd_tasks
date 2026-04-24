@@ -111,7 +111,7 @@ Switch the solvent supply line from bottle A to bottle B by operating threaded c
 | <img src="media/1LSolvent_Bottle.png" height="80"> | 500mL Solvent Bottle | 2 | 13.12 | [Tmall](https://detail.tmall.com/item.htm?app=chrome&bxsign=scdYgqU44PMI89owadFI75sB1AKZoK-56RJ-S0sGQMMQCRSMt85P7s_MWn1Zi2EDgmwTDBX0cNlR53ioUYeZTSzemEHAf_KfzD0UP6RO9DM0KASlpvjyj9DhgdZygutLxYs&cpp=1&id=869789079507&price=13.12&shareUniqueId=35385001152&share_crt_v=1&shareurl=true&short_name=h.iUwsuCzZsSsNdJS&skuId=5701565429699&sourceType=item%2Citem&sp_tk=Y1JxY1VDVm9NZnQ%3D&spm=a2159r.13376460.0.0&suid=e57d488b-6d6f-4727-b3e2-5cdbf43f0b1a&tbSocialPopKey=shareItem&tk=cRqcUCVoMft&un=89f5c99caa22df09defba349c3f14615&un_site=0&ut_sk=1.aW3bAFvpTXYDAIgzFZZTpDpb_21646297_1773634888738.Copy.1&wxsign=tbwYdZcFKjVktSwOIbAfreMg-q47_HrpJ1qddFoIl80b9bFAj8OwWKDz70JBQTxcrfj-pVLJdn1IgXb8SOiEbgdg7jMyGGiHDKkmCU838rghPgcLYXEuDKL6kqNZU3FbWFD) |
 | <img src="media/Flexible_Tubing+Filter_Head.png" height="80"> | Flexible Tubing + Filter Head | 1 set | 100 | [Tmall](https://detail.tmall.com/item.htm?id=956086151290&skuId=6049729811075) |
 | <img src="media/SpareBottleCap.png" height="80"> | Spare Bottle Cap | 2 | 8 | [Tmall](https://detail.tmall.com/item.htm?id=869789079507&skuId=5762711841749) |
-| <img src="media/instrument_drawer_assembly.png" height="80"> | Instrument Drawer Assembly | 1 | self-printed | [`drawer.stl`](parts/drawer.stl) |
+| <img src="media/instrument_drawer_assembly.png" height="80"> | Instrument Drawer Assembly | 1 | self-printed | [`storage_drawer_new.stl`](parts/storage_drawer_new.stl) |
 
 ### 3D-Printed Parts
 
@@ -123,10 +123,10 @@ Printable STL and source CAD files are in [`parts/`](parts/). Click any file on 
 | [`2ml-sample-vial-rack.stl`](parts/2ml-sample-vial-rack.stl) | 2 mL Sample Vial Rack | Step 1, 2 |
 | [`8ml-glass-vial.stl`](parts/8ml-glass-vial.stl) | 8 mL Glass Vial | Step 1 |
 | [`8ml-glass-vial-rack-refine.stl`](parts/8ml-glass-vial-rack-refine.stl) | 8 mL Glass Vial Rack | Step 1, 2 |
-| [`drawer.stl`](parts/storage_drawer_new.stl) | Instrument Drawer Assembly | Step 2 |
+| [`storage_drawer_new.stl`](parts/storage_drawer_new.stl) | Instrument Drawer Assembly | Step 2 |
 | [`1l-solvent-bottle.stl`](parts/1l-solvent-bottle.stl) | 1 L Solvent Bottle | Step 3 |
 
-> **Instrument Drawer** — `drawer.stl` prints as a single piece (print-in-place, no assembly required). The reference files [`instrument-cabinet.stl`](parts/instrument-cabinet.stl) and [`instrument-drawer.stl`](parts/instrument-drawer.stl) show the cabinet and drawer components separately for reference.
+> **Instrument Drawer** — `storage_drawer_new.stl` prints as a single piece (print-in-place, no assembly required). The reference files [`instrument-cabinet.stl`](parts/instrument-cabinet.stl) and [`instrument-drawer.stl`](parts/instrument-drawer.stl) show the cabinet and drawer components separately for reference.
 >
 > <img src="media/instrument_drawer_assembly.png" width="600">
 

@@ -2,16 +2,23 @@
 
 ## Overview
 
-This task focuses on whole-body teleoperated control and end-effector coordination utilizing the **Unitree G1** humanoid robot. The objective is to bridge the gap between research and practical application by simulating a logistics scenario. Participants must use remote operation methods (VR, motion capture) to transfer items from shelves of varying heights to a transport vehicle. The system relies solely on the robot's own perception capabilities to execute complex maneuvers including upright, bent, and crouched postures.
+This task focuses on whole-body control and end-effector coordination utilizing the **Unitree G1** humanoid robot. The objective is to bridge the gap between research and practical application by simulating a logistics scenario in which items of varying difficulty must be transferred from shelves of different heights to a transport vehicle. The system relies solely on the robot's onboard perception to execute complex maneuvers including upright, bent, and crouched postures.
+
+Like every other track, this task supports **all three autonomy levels** — on-site teleoperation, remote teleoperation, and fully autonomous — scored with the common [autonomy multiplier](../README.md#autonomy-level-multiplier). Teleoperation may be performed with any controller of the team's choice (e.g., VR headset, inertial motion capture suit); fully autonomous runs use a learned or programmed policy end-to-end with no human control.
 
 ## Task Rules
 
-The competition time limit is **10 minutes**. The goal is to complete as many item transfer tasks as possible within this window.
+The competition time budget is **20 minutes**, split into **two 10-minute runs**. The goal is to complete as many item transfers as possible across the two runs.
+
+**Runs:**
+- A **run** is a single **10-minute** block during which the team transfers items from the shelves to the unloading area (transport vehicle or table).
+- Each team gets **exactly 2 runs** (2 × 10 minutes = 20 minutes total).
+- Teams declare **one autonomy level per run** — on-site teleop, remote teleop, or fully autonomous — **before the run starts**. That single level applies to every item transferred during the run; teams cannot switch modes mid-run. The two runs may use different autonomy levels (e.g., one teleop run and one autonomous run).
 
 **Operational Constraints (Setup & Reset):**
-- **Control Method:** Remote operation via VR headset or inertial motion capture suit.
+- **Control Method:** For teleoperation runs (on-site or remote), any controller of the team's choice is allowed (e.g., VR headset, inertial motion capture suit). For fully autonomous runs, no human control is permitted during execution.
 - **Perception:** Participants must acquire external information **solely** through the robot's onboard perception system.
-- **Capacity:** There is no limit on the number of items transferred per single operation cycle, provided they are not dropped.
+- **Capacity:** Within a run, there is no limit on the number of items the team attempts to transfer, provided they are not dropped.
 
 ### Step 1: Shelf Picking 
 
@@ -109,11 +116,11 @@ Printable STL and source CAD files are in [`parts/`](parts/). -->
 
 ### Competition Rules
 
-- **Time limit:** 10 minutes per team.
-- **Objective:** Maximize total score by transferring items of varying difficulty.
-- **Definition of Success:** A transfer is complete when an item is taken from a shelf and placed on the unloading area table within the time limit.
+- **Time limit:** 20 minutes per team, split into **two 10-minute runs**.
+- **Objective:** Maximize total score by transferring items of varying difficulty across the two runs.
+- **Definition of Success:** A transfer is complete when an item is taken from a shelf and placed on the unloading area table within that run's 10-minute window.
 - **Perception:** Only robot-onboard sensors allowed (no external global cameras for the operator).
-- **Autonomy multiplier:** Each step's score is scaled by its [autonomy level multiplier](../README.md#autonomy-level-multiplier) (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous). Teams may choose a different level per step.
+- **Autonomy multiplier:** Teams declare **one autonomy level per run** (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous) before the run starts. Base points from all successful transfers in that 10-minute run are summed, then multiplied by that run's [autonomy level multiplier](../README.md#autonomy-level-multiplier). The same level applies to every item in the run — teams do not switch modes mid-run or per item. The two runs may use different autonomy levels.
 
 ### Point Breakdown
 
@@ -130,7 +137,9 @@ Scoring is weighted based on the difficulty of the whole-body motion required (p
 
 ### Example
 
-> A team operates for 10 minutes, transferring a mix of items:
+> A team's two 10-minute runs, each with its own declared autonomy level:
+>
+> **Run 1 — Remote teleop (×2)**
 >
 > | Item Type | Qty | Points | Subtotal |
 > |:---------:|:---:|:------:|:--------:|
@@ -138,7 +147,23 @@ Scoring is weighted based on the difficulty of the whole-body motion required (p
 > | Middle Shelf | 2 | 8 | 16 |
 > | Bottom Shelf | 1 | 10 | 10 |
 > | **Drops** | 2 | -3 | -6 |
-> | | | **Total** | **40** |
+> | | | **Base total** | **40** |
+>
+> Run 1 score: **40 × 2 = 80**.
+>
+> **Run 2 — Fully autonomous (×4)**
+>
+> | Item Type | Qty | Points | Subtotal |
+> |:---------:|:---:|:------:|:--------:|
+> | Top Shelf | 2 | 5 | 10 |
+> | Middle Shelf | 1 | 8 | 8 |
+> | Bottom Shelf | 0 | 10 | 0 |
+> | **Drops** | 1 | -3 | -3 |
+> | | | **Base total** | **15** |
+>
+> Run 2 score: **15 × 4 = 60**.
+>
+> **Total:** 80 + 60 = **140**.
 
 ## Coming Soon
 

@@ -169,7 +169,7 @@ Reference animations of the robot performing the task (human-teleoperated), show
 - **Objective:** Maximize total score by completing as many rounds as possible.
 - **Difficulty choice:** Teams select Easy or Hard for Step 1 **before each round**. The choice applies a score multiplier to Step 1 only.
 - **Randomization:** Object initial positions are randomized each round but always within the robot's reachable workspace. For Step 1 Hard mode, the occupied/empty slots in the rack are also randomized.
-- **Autonomy multiplier:** Each step's score is scaled by its [autonomy level multiplier](../README.md#autonomy-level-multiplier) (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous). Teams may choose a different level per step.
+- **Autonomy multiplier:** Each **round** is one **run** for autonomy. Sum the base points from Steps 1–3 in that round, then multiply by that round’s [autonomy level multiplier](../README.md#autonomy-level-multiplier) (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous). Teams declare one autonomy level per round; the same level applies to all steps in that round.
 
 ### Point Breakdown
 
@@ -214,15 +214,15 @@ Steps 2 and 3 are worth **20 points each per round**. Step 1 base score is **20 
 
 ### Example
 
-> A team completes 3 full rounds and is mid-way through round 4 when time expires. They use different autonomy levels per step (autonomy multiplier shown in parentheses):
+> A team completes 3 full rounds and is mid-way through round 4 when time expires. They choose **one autonomy level per round** (applied to the sum of Step 1–3 base points for that round):
 >
-> | Round | Difficulty | Step 1 | Step 2 | Step 3 | Subtotal |
-> |:-----:|:----------:|:------:|:------:|:------:|:--------:|
-> | 1 | Easy | 20 × 1.0 × auto(×4) = 80 | 20 × teleop(×1) = 20 | 20 × teleop(×1) = 20 | 120 |
-> | 2 | Hard | 15 × 1.5 × auto(×4) = 90 | 20 × remote(×2) = 40 | 15 × teleop(×1) = 15 | 145 |
-> | 3 | Hard | 20 × 1.5 × auto(×4) = 120 | 15 × remote(×2) = 30 | 20 × teleop(×1) = 20 | 170 |
-> | 4 | Easy | 20 × 1.0 × auto(×4) = 80 | 10 × teleop(×1) = 10 | — | 90 |
-> | | | | | **Total** | **525** |
+> | Round | Difficulty | Base (Steps 1+2+3) | Autonomy | Subtotal |
+> |:-----:|:----------:|:-------------------:|:--------:|:--------:|
+> | 1 | Easy | 20 + 20 + 20 = 60 | Remote ×2 | 120 |
+> | 2 | Hard | 30 + 20 + 20 = 70 | On-site teleop ×1 | 70 |
+> | 3 | Hard | 30 + 15 + 20 = 65 | Fully autonomous ×4 | 260 |
+> | 4 | Easy | 20 + 10 + 0 = 30 (time expires mid–Step 3) | Remote ×2 | 60 |
+> | | | | **Total** | **510** |
 
 ## Coming Soon
 

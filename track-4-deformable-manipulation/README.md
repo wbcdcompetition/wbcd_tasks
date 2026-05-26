@@ -9,7 +9,7 @@ This task evaluates robotic manipulation of deformable objects in manufacturing 
 The competition time limit is **15 minutes**. The goal is to pick and load a T-shirt onto a printing pallet with proper alignment and surface quality.
 
 **Operational Constraints (Setup & Reset):**
-- **Human intervention:** Any human intervention (except teleoperation) to the setup during robot movement is penalized, and that round receives zero points. The timer does not stop.
+- **Human intervention:** Any human intervention (except teleoperation) to the setup during robot movement is penalized. The timer does not stop.
 - **Reset Time:** Time spent resetting the workspace (e.g., restacking T-shirts) is excluded from the 15-minute limit.
 - **Timer policy:** Once the timer starts, manual changes to the setup are not allowed. Any maintenance or repair work does not pause the timer.
 - **Evaluation handoff:** Teams must inform the judges when alignment is finished. The timer stops for evaluation at that point, and robots are not allowed to move during the evaluation period.
@@ -188,7 +188,7 @@ Reference videos of a human performing the task (complementing the robot clips a
 
 - **Time limit:** 15 minutes per team.
 - **Objective:** Pick, load, and align a T-shirt on the printing pallet.
-- **Intervention:** Any human intervention (except teleoperation) to the setup during robot movement is penalized, and that round receives zero points. The timer does not stop.
+- **Intervention:** Any human intervention (except teleoperation) to the setup during robot movement is penalized. The timer does not stop.
 - **Autonomy multiplier:** Each **run** (one complete T-shirt cycle through Steps 1–3) uses one [autonomy level multiplier](../README.md#autonomy-level-multiplier) (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous). Sum base points for that T-shirt, then multiply by the level declared for that run.
 
 ### Point Breakdown

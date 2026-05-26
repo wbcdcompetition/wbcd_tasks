@@ -9,8 +9,15 @@ This task evaluates robotic manipulation of deformable objects in manufacturing 
 The competition time limit is **15 minutes**. The goal is to pick and load a T-shirt onto a printing pallet with proper alignment and surface quality.
 
 **Operational Constraints (Setup & Reset):**
-- **Human Intervention:** Each human intervention incurs a penalty as defined by competition rules.
+- **Human intervention:** Any human intervention (except teleoperation) to the setup during robot movement is penalized, and that round receives zero points. The timer does not stop.
 - **Reset Time:** Time spent resetting the workspace (e.g., restacking T-shirts) is excluded from the 15-minute limit.
+- **Timer policy:** Once the timer starts, manual changes to the setup are not allowed. Any maintenance or repair work does not pause the timer.
+- **Evaluation handoff:** Teams must inform the judges when alignment is finished. The timer stops for evaluation at that point, and robots are not allowed to move during the evaluation period.
+- **Custom grippers:** Teams may install their own grippers in any design.
+- **Team-defined setup:** T-shirt stack position and robot arm base positions are decided by each team.
+- **Stack size:** Each stack contains 5 T-shirts.
+- **Pallet constraints:** Modifications to the pallet are not allowed. Teams are only allowed to use helper parts/tools that are not attached to the pallet.
+- **T-shirt removal:** T-shirt removal after a run is performed by the team, and the timer is stopped during removal.
 
 ### Step 1: Picking
 
@@ -70,7 +77,76 @@ Align the T-shirt with pallet edges and ensure a flat surface without wrinkles.
 | 3a | Align T-shirt edges with pallet boundaries |
 | 3b | Smooth the surface to remove wrinkles |
 
-**Success Criteria:** T-shirt edges aligned to pallet edges, surface smooth and flat for printing readiness.
+**Success Criteria:** T-shirt is aligned and smooth in the target region.
+
+**Alignment definition:** Alignment is counted when the T-shirt collar region is within the defined target region.
+
+**Surface smoothness definition:** Surface quality is evaluated by the number of wrinkles on the target printing area.
+
+<p align="center">
+  <img src="media/important_area.png" width="520">
+</p>
+
+## Good vs Bad Examples
+
+Reference examples for alignment and smoothness in the target region.
+
+### Good Examples
+
+<table>
+<tr>
+<td width="280" valign="top" align="center">
+<img src="media/good_1.jpg" width="260"><br>
+Good Example 1
+</td>
+<td width="280" valign="top" align="center">
+<img src="media/good_2.jpg" width="260"><br>
+Good Example 2
+</td>
+</tr>
+</table>
+
+### Marginally Acceptable Example
+
+<table>
+<tr>
+<td width="280" valign="top" align="center">
+<img src="media/aligned_not_smooth.jpg" width="260"><br>
+Aligned, Not Smooth
+</td>
+</tr>
+</table>
+
+### Bad Examples
+
+<table>
+<tr>
+<td width="280" valign="top" align="center">
+<img src="media/not_aligned_1.jpg" width="260"><br>
+Not Aligned (Case 1)
+</td>
+<td width="280" valign="top" align="center">
+<img src="media/not_aligned_2.jpg" width="260"><br>
+Not Aligned (Case 2)
+</td>
+</tr>
+<tr>
+<td width="280" valign="top" align="center">
+<img src="media/not_aligned_3.jpg" width="260"><br>
+Not Aligned (Case 3)
+</td>
+<td width="280" valign="top" align="center">
+<img src="media/not_aligned_not_smooth_1.jpg" width="260"><br>
+Not Aligned, Not Smooth (Case 1)
+</td>
+</tr>
+<tr>
+<td width="280" valign="top" align="center">
+<img src="media/not_aligned_not_smooth_2.jpg" width="260"><br>
+Not Aligned, Not Smooth (Case 2)
+</td>
+</tr>
+</table>
 
 </td></tr>
 </table>
@@ -112,7 +188,7 @@ Reference videos of a human performing the task (complementing the robot clips a
 
 - **Time limit:** 15 minutes per team.
 - **Objective:** Pick, load, and align a T-shirt on the printing pallet.
-- **Intervention:** Human intervention incurs a penalty as defined by competition rules.
+- **Intervention:** Any human intervention (except teleoperation) to the setup during robot movement is penalized, and that round receives zero points. The timer does not stop.
 - **Autonomy multiplier:** Each **run** (one complete T-shirt cycle through Steps 1–3) uses one [autonomy level multiplier](../README.md#autonomy-level-multiplier) (×1 on-site teleop / ×2 remote teleop / ×4 fully autonomous). Sum base points for that T-shirt, then multiply by the level declared for that run.
 
 ### Point Breakdown
@@ -120,21 +196,25 @@ Reference videos of a human performing the task (complementing the robot clips a
 | Action | Points | Criteria |
 |--------|:------:|----------|
 | Pick + Load | +5 | Successfully picks a single T-shirt and loads it onto the pallet |
-| Alignment + Surface | +5 | T-shirt loaded without major wrinkles and aligned to pallet edges |
-| Multiple T-shirts picked | -5 | More than one T-shirt grasped in a single attempt |
-| T-shirt stuck on pallet | -5 | Unable to remove or reposition the T-shirt |
+| Alignment | +2.5 | T-shirt is aligned in the target region |
+| Smooth Surface | +2.5 | T-shirt surface is smooth in the target region. This score applies only if alignment is achieved. |
+| Multiple T-shirts picked | -5 | More than one T-shirt is placed onto the pallet in a single attempt. Incidental contact with another T-shirt does not by itself trigger this penalty. |
+| Dislocated T-shirts left unpicked | -0.5 each | If remaining T-shirts are dislocated and the team gives up recovering/picking them, deduct 0.5 points per T-shirt. For automation, manual recovering/picking is not allowed. |
+| Human manual intervention (Steps 1-3) | -5 | Any human manual intervention during Steps 1 to 3 incurs a -5 penalty. |
 
 ### Example
 
-> A robot completes two rounds of T-shirt loading:
+> A robot completes two rounds of T-shirt loading (base points, before applying per-run autonomy):
 >
 > | Round | Action | Result | Score |
 > |:-----:|--------|--------|:-----:|
 > | 1 | Pick + Load | Success | +5 |
-> | 1 | Alignment + Surface | Minor wrinkles, partial alignment | +0 |
-> | 2 | Pick + Load | Picked two T-shirts (-5), reloaded one | +5 -5 |
-> | 2 | Alignment + Surface | Good alignment, smooth surface | +5 |
-> | | | **Total** | **+10** |
+> | 1 | Alignment | Aligned in target region | +2.5 |
+> | 1 | Smooth Surface | Smooth in target region | +2.5 |
+> | 2 | Pick + Load | Success | +5 |
+> | 2 | Alignment | Aligned in target region | +2.5 |
+> | 2 | Smooth Surface | Not smooth in target region | +0 |
+> | | | **Total (base)** | **+17.5** |
 
 ## Coming Soon
 

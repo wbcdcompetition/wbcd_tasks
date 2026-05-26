@@ -161,14 +161,14 @@ Reference videos of a human performing the task (complementing the robot clips a
 
 <strong>Human demo 1</strong><br><br>
 
-<video src="media/human_demo1.mp4" width="280" controls playsinline></video>
+<img src="media/human_demo1.gif" width="280">
 
 </td>
 <td width="280" valign="top" align="center">
 
 <strong>Human demo 2</strong><br><br>
 
-<video src="media/human_demo2.mp4" width="280" controls playsinline></video>
+<img src="media/human_demo2.gif" width="280">
 
 </td>
 </tr>
